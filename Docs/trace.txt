@@ -1,0 +1,289 @@
+Trace output looks like:
+
+APP_VERSION:        V1.1.0
+MW_LORAWAN_VERSION: V2.3.0
+MW_RADIO_VERSION:   V1.1.0
+###### OTAA ######
+###### AppKey:      78:A8:18:68:20:90:8D:AD:56:FD:0E:1A:D3:5E:F3:20
+###### NwkKey:      78:A8:18:68:20:90:8D:AD:56:FD:0E:1A:D3:5E:F3:20
+###### ABP  ######
+###### AppSKey:     78:A8:18:68:20:90:8D:AD:56:FD:0E:1A:D3:5E:F3:20
+###### NwkSKey:     78:A8:18:68:20:90:8D:AD:56:FD:0E:1A:D3:5E:F3:20
+###### DevEui:  60:81:F9:4B:02:96:4E:2A
+###### AppEui:  60:81:F9:5C:7B:60:B0:93
+###### DevAddr: 05:00:9B:13
+0s037:TX on freq 902300000 Hz at DR 0
+sensor will next be sampled in 10 seconds
+0s411:MAC txDone
+5s396:RX_1 on freq 923300000 Hz at DR 10
+5s447:IRQ_RX_TX_TIMEOUT
+5s447:MAC rxTimeOut
+6s408:RX_2 on freq 923300000 Hz at DR 8
+6s475:IRQ_RX_TX_TIMEOUT
+6s475:MAC rxTimeOut
+
+###### = JOIN FAILED
+sensor will next be sampled in 10 seconds
+
+sensor retrieved 7 bytes
+16s481:TX on freq 904900000 Hz at DR 0
+sensor will next be sampled in 15 seconds
+16s855:MAC txDone
+21s839:RX_1 on freq 926300000 Hz at DR 10
+21s939:MAC rxDone
+
+###### = JOINED = OTAA =====================
+
+###### ========== MCPS-Indication ==========
+
+sensor retrieved 7 bytes
+31s488:TX on freq 908100000 Hz at DR 0
+31s490:SEND REQUEST
+sensor will next be sampled in 15 seconds
+31s861:MAC txDone
+32s845:RX_1 on freq 926300000 Hz at DR 10
+32s896:IRQ_RX_TX_TIMEOUT
+32s896:MAC rxTimeOut
+33s857:RX_2 on freq 923300000 Hz at DR 8
+33s924:IRQ_RX_TX_TIMEOUT
+33s924:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+46s494:TX on freq 911700000 Hz at DR 0
+46s496:SEND REQUEST
+sensor will next be sampled in 15 seconds
+46s867:MAC txDone
+47s851:RX_1 on freq 927500000 Hz at DR 10
+47s902:IRQ_RX_TX_TIMEOUT
+47s902:MAC rxTimeOut
+48s863:RX_2 on freq 923300000 Hz at DR 8
+48s930:IRQ_RX_TX_TIMEOUT
+48s930:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+61s500:TX on freq 912500000 Hz at DR 0
+61s501:SEND REQUEST
+sensor will next be sampled in 15 seconds
+61s873:MAC txDone
+62s857:RX_1 on freq 925100000 Hz at DR 10
+62s908:IRQ_RX_TX_TIMEOUT
+62s908:MAC rxTimeOut
+63s869:RX_2 on freq 923300000 Hz at DR 8
+63s936:IRQ_RX_TX_TIMEOUT
+63s936:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+76s505:TX on freq 906700000 Hz at DR 0
+76s507:SEND REQUEST
+sensor will next be sampled in 15 seconds
+76s878:MAC txDone
+77s863:RX_1 on freq 926900000 Hz at DR 10
+77s914:IRQ_RX_TX_TIMEOUT
+77s914:MAC rxTimeOut
+78s875:RX_2 on freq 923300000 Hz at DR 8
+78s942:IRQ_RX_TX_TIMEOUT
+78s942:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+91s511:TX on freq 913500000 Hz at DR 0
+91s513:SEND REQUEST
+sensor will next be sampled in 15 seconds
+91s884:MAC txDone
+92s869:RX_1 on freq 923300000 Hz at DR 10
+92s919:IRQ_RX_TX_TIMEOUT
+92s919:MAC rxTimeOut
+93s880:RX_2 on freq 923300000 Hz at DR 8
+93s948:IRQ_RX_TX_TIMEOUT
+93s948:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+106s517:TX on freq 908900000 Hz at DR 0
+106s519:SEND REQUEST
+sensor will next be sampled in 15 seconds
+106s890:MAC txDone
+107s875:RX_1 on freq 923900000 Hz at DR 10
+107s925:IRQ_RX_TX_TIMEOUT
+107s925:MAC rxTimeOut
+108s886:RX_2 on freq 923300000 Hz at DR 8
+108s954:IRQ_RX_TX_TIMEOUT
+108s954:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+121s523:TX on freq 909500000 Hz at DR 0
+121s525:SEND REQUEST
+sensor will next be sampled in 15 seconds
+121s896:MAC txDone
+122s880:RX_1 on freq 925700000 Hz at DR 10
+122s931:IRQ_RX_TX_TIMEOUT
+122s931:MAC rxTimeOut
+123s892:RX_2 on freq 923300000 Hz at DR 8
+123s959:IRQ_RX_TX_TIMEOUT
+123s959:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+136s529:TX on freq 910500000 Hz at DR 0
+136s531:SEND REQUEST
+sensor will next be sampled in 15 seconds
+136s902:MAC txDone
+137s886:RX_1 on freq 923900000 Hz at DR 10
+137s937:IRQ_RX_TX_TIMEOUT
+137s937:MAC rxTimeOut
+138s898:RX_2 on freq 923300000 Hz at DR 8
+138s965:IRQ_RX_TX_TIMEOUT
+138s965:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+151s535:TX on freq 906900000 Hz at DR 0
+151s537:SEND REQUEST
+sensor will next be sampled in 15 seconds
+151s908:MAC txDone
+152s892:RX_1 on freq 927500000 Hz at DR 10
+152s943:IRQ_RX_TX_TIMEOUT
+152s943:MAC rxTimeOut
+153s904:RX_2 on freq 923300000 Hz at DR 8
+153s971:IRQ_RX_TX_TIMEOUT
+153s971:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+166s541:TX on freq 912700000 Hz at DR 0
+166s542:SEND REQUEST
+sensor will next be sampled in 15 seconds
+166s914:MAC txDone
+167s898:RX_1 on freq 925700000 Hz at DR 10
+167s949:IRQ_RX_TX_TIMEOUT
+167s949:MAC rxTimeOut
+168s910:RX_2 on freq 923300000 Hz at DR 8
+168s977:IRQ_RX_TX_TIMEOUT
+168s977:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+181s546:TX on freq 906500000 Hz at DR 0
+181s548:SEND REQUEST
+sensor will next be sampled in 15 seconds
+181s919:MAC txDone
+182s904:RX_1 on freq 926300000 Hz at DR 10
+182s955:IRQ_RX_TX_TIMEOUT
+182s955:MAC rxTimeOut
+183s916:RX_2 on freq 923300000 Hz at DR 8
+183s983:IRQ_RX_TX_TIMEOUT
+183s983:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+196s552:TX on freq 909900000 Hz at DR 0
+196s554:SEND REQUEST
+sensor will next be sampled in 15 seconds
+196s925:MAC txDone
+197s910:RX_1 on freq 926900000 Hz at DR 10
+197s960:IRQ_RX_TX_TIMEOUT
+197s960:MAC rxTimeOut
+198s921:RX_2 on freq 923300000 Hz at DR 8
+198s989:IRQ_RX_TX_TIMEOUT
+198s989:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+211s558:TX on freq 904300000 Hz at DR 0
+211s560:SEND REQUEST
+sensor will next be sampled in 15 seconds
+211s931:MAC txDone
+212s916:RX_1 on freq 924500000 Hz at DR 10
+213s025:MAC rxDone
+
+###### ========== MCPS-Confirm =============
+
+
+###### ========== MCPS-Indication ==========
+
+sensor retrieved 7 bytes
+226s564:TX on freq 904500000 Hz at DR 0
+226s566:SEND REQUEST
+sensor will next be sampled in 15 seconds
+226s937:MAC txDone
+227s921:RX_1 on freq 925100000 Hz at DR 10
+227s972:IRQ_RX_TX_TIMEOUT
+227s972:MAC rxTimeOut
+228s933:RX_2 on freq 923300000 Hz at DR 8
+229s000:IRQ_RX_TX_TIMEOUT
+229s000:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+241s570:TX on freq 905300000 Hz at DR 0
+241s572:SEND REQUEST
+sensor will next be sampled in 15 seconds
+241s943:MAC txDone
+242s927:RX_1 on freq 927500000 Hz at DR 10
+242s978:IRQ_RX_TX_TIMEOUT
+242s978:MAC rxTimeOut
+243s939:RX_2 on freq 923300000 Hz at DR 8
+244s006:IRQ_RX_TX_TIMEOUT
+244s006:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+256s576:TX on freq 903900000 Hz at DR 0
+256s578:SEND REQUEST
+sensor will next be sampled in 15 seconds
+256s949:MAC txDone
+257s933:RX_1 on freq 923300000 Hz at DR 10
+257s984:IRQ_RX_TX_TIMEOUT
+257s984:MAC rxTimeOut
+258s945:RX_2 on freq 923300000 Hz at DR 8
+259s012:IRQ_RX_TX_TIMEOUT
+259s012:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+271s582:TX on freq 904100000 Hz at DR 0
+271s583:SEND REQUEST
+sensor will next be sampled in 15 seconds
+271s955:MAC txDone
+272s939:RX_1 on freq 923900000 Hz at DR 10
+272s990:IRQ_RX_TX_TIMEOUT
+272s990:MAC rxTimeOut
+273s951:RX_2 on freq 923300000 Hz at DR 8
+274s018:IRQ_RX_TX_TIMEOUT
+274s018:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+
+sensor retrieved 7 bytes
+286s587:TX on freq 905100000 Hz at DR 0
+286s589:SEND REQUEST
+sensor will next be sampled in 15 seconds
+286s960:MAC txDone
+287s945:RX_1 on freq 926900000 Hz at DR 10
+287s996:IRQ_RX_TX_TIMEOUT
+287s996:MAC rxTimeOut
+288s957:RX_2 on freq 923300000 Hz at DR 8
+289s023:IRQ_RX_TX_TIMEOUT
+289s023:MAC rxTimeOut
+
+###### ========== MCPS-Confirm =============
+

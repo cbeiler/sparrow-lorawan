@@ -1,0 +1,2044 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.9.278/W32 for ARM                  12/Oct/2021  14:49:59
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Exe\sparrow.out
+#    Map file     =
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\List\sparrow.map
+#    Command line =
+#        -f C:\Users\ray\AppData\Local\Temp\EW3F97.tmp
+#        (C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\adc.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\adc_if.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\app.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\appinit.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\bin.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\cmac.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\debug.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\led.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\LmHandler.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\LmhpCompliance.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\lora_info.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\LoRaMac.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\LoRaMacAdr.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\LoRaMacClassB.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\LoRaMacCommands.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\LoRaMacConfirmQueue.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\LoRaMacCrypto.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\LoRaMacParser.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\LoRaMacSerializer.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\lorawan_aes.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\main.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\NvmDataMgmt.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\radio.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\radio_board_if.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\radio_driver.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\radio_fw.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\Region.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\RegionAS923.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\RegionAU915.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\RegionBaseUS.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\RegionCN470.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\RegionCN779.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\RegionCommon.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\RegionEU433.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\RegionEU868.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\RegionIN865.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\RegionKR920.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\RegionRU864.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\RegionUS915.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\rtc.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\sensor.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\soft-se.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\startup_stm32wl55xx_cm4.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32_adv_trace.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32_lpm.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32_lpm_if.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32_mem.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32_seq.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32_systime.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32_timer.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32_tiny_sscanf.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32_tiny_vsnprintf.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_adc.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_adc_ex.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_cortex.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_dma.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_dma_ex.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_exti.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_flash.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_flash_ex.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_gpio.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_i2c.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_i2c_ex.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_msp.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_pwr.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_pwr_ex.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_rcc.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_rcc_ex.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_rng.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_rng_ex.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_rtc.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_rtc_ex.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_spi.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_spi_ex.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_subghz.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_tim.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_tim_ex.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_uart.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_hal_uart_ex.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_it.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\stm32wlxx_ll_adc.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\strl.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\subghz.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\sys_app.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\system_stm32wlxx.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\timer_if.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\usart_if.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\util_if.o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj\utilities.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
+#        --no_out_extension -o
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Exe\sparrow.out
+#        --map
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\List\sparrow.map
+#        --config
+#        C:\Users\ray\dev\sparrow-lorawan\Application\EWARM/stm32wl55xx_flash_cm4.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x803'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'7fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address      Size  Object
+  -------            ----         -------      ----  ------
+"A0":                                         0x138
+  .intvec            ro code   0x800'0000     0x138  startup_stm32wl55xx_cm4.o [1]
+                             - 0x800'0138     0x138
+
+"P1":                                      0x1'459f
+  .text              ro code   0x800'0138    0x2660  LoRaMac.o [1]
+  .text              ro code   0x800'2798     0x264  stm32_timer.o [1]
+  .text              ro code   0x800'29fc     0x1d4  stm32_systime.o [1]
+  .text              ro code   0x800'2bd0     0x270  stm32_adv_trace.o [1]
+  .text              ro code   0x800'2e40      0x4e  LoRaMacClassB.o [1]
+  .text              ro code   0x800'2e8e      0x3a  zero_init3.o [4]
+  .text              ro code   0x800'2ec8     0x1a0  LoRaMacConfirmQueue.o [1]
+  .text              ro code   0x800'3068     0x694  Region.o [1]
+  .text              ro code   0x800'36fc      0xc0  utilities.o [1]
+  .text              ro code   0x800'37bc     0x16a  LoRaMacParser.o [1]
+  .rodata            const     0x800'3926       0x2  app.o [1]
+  .text              ro code   0x800'3928     0x67c  LoRaMacCrypto.o [1]
+  .text              ro code   0x800'3fa4     0x1f8  LoRaMacCommands.o [1]
+  .text              ro code   0x800'419c     0x540  soft-se.o [1]
+  .text              ro code   0x800'46dc      0xa6  ABImemcpy.o [4]
+  .rodata            const     0x800'4782       0x2  app.o [1]
+  .text              ro code   0x800'4784      0x1c  U32ToFlt.o [3]
+  .text              ro code   0x800'47a0     0x144  LoRaMacSerializer.o [1]
+  .text              ro code   0x800'48e4      0xc8  LoRaMacAdr.o [1]
+  .text              ro code   0x800'49ac      0x14  memset.o [4]
+  .text              ro code   0x800'49c0      0x24  stm32_mem.o [1]
+  .text              ro code   0x800'49e4     0x254  stm32_tiny_vsnprintf.o [1]
+  .text              ro code   0x800'4c38      0x7c  util_if.o [1]
+  .text              ro code   0x800'4cb4     0xad4  RegionAS923.o [1]
+  .text              ro code   0x800'5788     0xad8  RegionAU915.o [1]
+  .text              ro code   0x800'6260     0x834  RegionCN470.o [1]
+  .text              ro code   0x800'6a94     0xa88  RegionCN779.o [1]
+  .text              ro code   0x800'751c     0xa7c  RegionEU433.o [1]
+  .text              ro code   0x800'7f98     0xb08  RegionEU868.o [1]
+  .text              ro code   0x800'8aa0     0xa98  RegionIN865.o [1]
+  .text              ro code   0x800'9538     0xacc  RegionUS915.o [1]
+  .text              ro code   0x800'a004     0xa58  RegionRU864.o [1]
+  .text              ro code   0x800'aa5c      0x66  ABImemset.o [4]
+  .rodata            const     0x800'aac2       0x2  app.o [1]
+  .text              ro code   0x800'aac4       0x6  ABImemclr4.o [4]
+  .text              ro code   0x800'aaca     0x1fa  cmac.o [1]
+  .text              ro code   0x800'acc4     0x4d4  lorawan_aes.o [1]
+  .text              ro code   0x800'b198      0x14  strlen_small.o [4]
+  .text              ro code   0x800'b1ac      0x88  stm32_lpm.o [1]
+  .text              ro code   0x800'b234     0x71c  RegionCommon.o [1]
+  .text              ro code   0x800'b950      0x90  RegionBaseUS.o [1]
+  .text              ro code   0x800'b9e0      0x32  ABImemset48.o [4]
+  .rodata            const     0x800'ba12       0x2  RegionCommon.o [1]
+  .text              ro code   0x800'ba14      0x80  FltSub.o [3]
+  .text              ro code   0x800'ba94      0x48  FltToDbl.o [3]
+  .text              ro code   0x800'badc      0x58  floor.o [3]
+  .text              ro code   0x800'bb34      0x3a  DblToS32.o [3]
+  .rodata            const     0x800'bb6e       0x2  RegionCommon.o [1]
+  .text              ro code   0x800'bb70      0xd6  FltAdd.o [3]
+  .rodata            const     0x800'bc46       0x2  RegionCommon.o [1]
+  .text              ro code   0x800'bc48    0x1275  radio.o [1]
+  .rodata            const     0x800'cebe       0x2  RegionCommon.o [1]
+  .text              ro code   0x800'cec0     0x98c  radio_driver.o [1]
+  .text              ro code   0x800'd84c      0xdc  sys_app.o [1]
+  .text              ro code   0x800'd928      0x24  radio_fw.o [1]
+  .text              ro code   0x800'd94c      0x4c  subghz.o [1]
+  .text              ro code   0x800'd998      0xd4  radio_board_if.o [1]
+  .text              ro code   0x800'da6c     0x106  I64DivMod_small.o [4]
+  .text              ro code   0x800'db72       0x2  stm32wlxx_hal_uart.o [1]
+  .text              ro code   0x800'db74     0x4f4  stm32wlxx_hal_subghz.o [1]
+  .text              ro code   0x800'e068     0x10c  adc_if.o [1]
+  .text              ro code   0x800'e174      0x98  stm32wlxx_hal.o [1]
+  .text              ro code   0x800'e20c     0x1aa  timer_if.o [1]
+  .text              ro code   0x800'e3b6       0x2  stm32wlxx_hal_uart.o [1]
+  .text              ro code   0x800'e3b8     0x122  stm32wlxx_it.o [1]
+  .text              ro code   0x800'e4da       0x2  stm32wlxx_hal_uart.o [1]
+  .text              ro code   0x800'e4dc      0x9c  stm32wlxx_hal_cortex.o [1]
+  .text              ro code   0x800'e578     0x1ac  stm32wlxx_hal_gpio.o [1]
+  .text              ro code   0x800'e724       0x2  I64DivZer.o [4]
+  .text              ro code   0x800'e726       0x2  stm32wlxx_hal_uart.o [1]
+  .text              ro code   0x800'e728      0x94  adc.o [1]
+  .text              ro code   0x800'e7bc      0x9c  stm32wlxx_hal_adc_ex.o [1]
+  .text              ro code   0x800'e858     0x7d4  stm32wlxx_hal_adc.o [1]
+  .text              ro code   0x800'f02c     0x87c  stm32wlxx_hal_rcc.o [1]
+  .text              ro code   0x800'f8a8     0x22c  stm32wlxx_hal_msp.o [1]
+  .text              ro code   0x800'fad4      0xe4  rtc.o [1]
+  .text              ro code   0x800'fbb8     0x386  stm32wlxx_hal_rtc.o [1]
+  .text              ro code   0x800'ff3e       0x2  stm32wlxx_hal_uart.o [1]
+  .text              ro code   0x800'ff40      0xc0  stm32wlxx_hal_rtc_ex.o [1]
+  .text              ro code   0x801'0000     0x166  debug.o [1]
+  .text              ro code   0x801'0166       0x2  stm32wlxx_hal_uart.o [1]
+  .text              ro code   0x801'0168     0x34c  stm32wlxx_hal_dma.o [1]
+  .text              ro code   0x801'04b4     0x5c2  stm32wlxx_hal_i2c.o [1]
+  .text              ro code   0x801'0a76       0x2  stm32wlxx_hal_uart.o [1]
+  .text              ro code   0x801'0a78     0x11a  stm32wlxx_hal_spi.o [1]
+  .text              ro code   0x801'0b92       0x2  stm32wlxx_hal_uart.o [1]
+  .text              ro code   0x801'0b94    0x107a  stm32wlxx_hal_uart.o [1]
+  .text              ro code   0x801'1c0e       0x2  stm32wlxx_hal_uart_ex.o [1]
+  .text              ro code   0x801'1c10     0x29c  appinit.o [1]
+  .text              ro code   0x801'1eac      0x54  stm32wlxx_hal_pwr.o [1]
+  .text              ro code   0x801'1f00      0x94  stm32wlxx_hal_pwr_ex.o [1]
+  .text              ro code   0x801'1f94     0x1b0  stm32wlxx_hal_rcc_ex.o [1]
+  .text              ro code   0x801'2144       0x2  stm32wlxx_hal_rtc_ex.o [1]
+  .text              ro code   0x801'2146       0x2  stm32wlxx_hal_uart_ex.o [1]
+  .text              ro code   0x801'2148     0x3c8  main.o [1]
+  .text              ro code   0x801'2510       0x2  stm32wlxx_hal_i2c.o [1]
+  .text              ro code   0x801'2512       0x2  stm32wlxx_hal_i2c.o [1]
+  .text              ro code   0x801'2514       0x2  stm32wlxx_hal_i2c.o [1]
+  .text              ro code   0x801'2516       0x2  stm32wlxx_hal_i2c.o [1]
+  .text              ro code   0x801'2518       0x2  stm32wlxx_hal_i2c.o [1]
+  .text              ro code   0x801'251a       0x2  stm32wlxx_hal_i2c.o [1]
+  .text              ro code   0x801'251c       0x2  stm32wlxx_hal_spi.o [1]
+  .text              ro code   0x801'2520     0x424  app.o [1]
+  .text              ro code   0x801'2944     0x150  stm32_seq.o [1]
+  .text              ro code   0x801'2a94      0xfa  stm32wlxx_hal_uart_ex.o [1]
+  .text              ro code   0x801'2b90      0x24  lora_info.o [1]
+  .text              ro code   0x801'2bb4     0x770  LmHandler.o [1]
+  .text              ro code   0x801'3324      0x74  led.o [1]
+  .text              ro code   0x801'3398      0x6c  sensor.o [1]
+  .text              ro code   0x801'3404       0x2  stm32_seq.o [1]
+  .text              ro code   0x801'3406       0x2  stm32_seq.o [1]
+  .text              ro code   0x801'3408       0xa  NvmDataMgmt.o [1]
+  .text              ro code   0x801'3414     0x2f4  LmhpCompliance.o [1]
+  .text              ro code   0x801'3708     0x17c  bin.o [1]
+  .rodata            const     0x801'3884     0x200  lorawan_aes.o [1]
+  .rodata            const     0x801'3a84     0x100  lorawan_aes.o [1]
+  .rodata            const     0x801'3b84      0xec  LmHandler.o [1]
+  .rodata            const     0x801'3c70      0xc0  soft-se.o [1]
+  .rodata            const     0x801'3d30      0xb0  radio_driver.o [1]
+  .rodata            const     0x801'3de0      0x90  RegionEU868.o [1]
+  .rodata            const     0x801'3e70      0x84  radio.o [1]
+  .rodata            const     0x801'3ef4      0x80  system_stm32wlxx.o [1]
+  .rodata            const     0x801'3f74      0x54  soft-se.o [1]
+  .rodata            const     0x801'3fc8      0x50  stm32_tiny_vsnprintf.o [1]
+  .rodata            const     0x801'4018      0x48  app.o [1]
+  .text              ro code   0x801'4060      0x44  stm32_lpm_if.o [1]
+  .text              ro code   0x801'40a4      0x10  stm32wlxx_hal.o [1]
+  .text              ro code   0x801'40b4      0x10  stm32wlxx_hal.o [1]
+  .rodata            const     0x801'40c4      0x40  RegionAU915.o [1]
+  .rodata            const     0x801'4104      0x40  RegionUS915.o [1]
+  .text              ro code   0x801'4144      0x38  packbits_init_single.o [4]
+  .rodata            const     0x801'417c      0x34  app.o [1]
+  .rodata            const     0x801'41b0      0x34  app.o [1]
+  .rodata            const     0x801'41e4      0x34  app.o [1]
+  .text              ro code   0x801'4218      0x32  usart_if.o [1]
+  .rodata            const     0x801'424c      0x2c  app.o [1]
+  .rodata            const     0x801'4278      0x2c  RegionAU915.o [1]
+  .rodata            const     0x801'42a4      0x2c  timer_if.o [1]
+  .text              ro code   0x801'42d0      0x28  data_init.o [4]
+  .iar.init_table    const     0x801'42f8      0x20  - Linker created -
+  .rodata            const     0x801'4318      0x20  app.o [1]
+  .rodata            const     0x801'4338      0x20  app.o [1]
+  .rodata            const     0x801'4358      0x20  app.o [1]
+  .rodata            const     0x801'4378      0x20  app.o [1]
+  .rodata            const     0x801'4398      0x20  app.o [1]
+  .rodata            const     0x801'43b8      0x20  app.o [1]
+  .rodata            const     0x801'43d8      0x20  system_stm32wlxx.o [1]
+  .text              ro code   0x801'43f8      0x1e  cmain.o [4]
+  .text              ro code   0x801'4416       0x4  low_level_init.o [2]
+  .text              ro code   0x801'441a       0x4  exit.o [2]
+  .text              ro code   0x801'4420       0xa  cexit.o [4]
+  .text              ro code   0x801'442c      0x14  exit.o [5]
+  .rodata            const     0x801'4440      0x1c  app.o [1]
+  .rodata            const     0x801'445c      0x1c  sensor.o [1]
+  .text              ro code   0x801'4478      0x1c  cstartup_M.o [4]
+  .rodata            const     0x801'4494      0x18  app.o [1]
+  .rodata            const     0x801'44ac      0x18  app.o [1]
+  .rodata            const     0x801'44c4      0x18  stm32_lpm_if.o [1]
+  .rodata            const     0x801'44dc      0x14  app.o [1]
+  .rodata            const     0x801'44f0      0x14  timer_if.o [1]
+  .rodata            const     0x801'4504      0x10  app.o [1]
+  .rodata            const     0x801'4514      0x10  app.o [1]
+  .rodata            const     0x801'4524      0x10  app.o [1]
+  .rodata            const     0x801'4534      0x10  usart_if.o [1]
+  .text              ro code   0x801'4544      0x10  startup_stm32wl55xx_cm4.o [1]
+  .rodata            const     0x801'4554       0xc  app.o [1]
+  .rodata            const     0x801'4560       0xc  app.o [1]
+  .rodata            const     0x801'456c       0x8  app.o [1]
+  .rodata            const     0x801'4574       0x8  RegionCommon.o [1]
+  .rodata            const     0x801'457c       0x8  RegionCommon.o [1]
+  .text              ro code   0x801'4584       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'4588       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'458c       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'4590       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'4594       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'4598       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'459c       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45a0       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45a4       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45a8       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45ac       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45b0       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45b4       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45b8       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45bc       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45c0       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45c4       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45c8       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45cc       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45d0       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45d4       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45d8       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45dc       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45e0       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45e4       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45e8       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45ec       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45f0       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45f4       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45f8       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'45fc       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'4600       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'4604       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'4608       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'460c       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'4610       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'4614       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'4618       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'461c       0x4  startup_stm32wl55xx_cm4.o [1]
+  .text              ro code   0x801'4620       0x2  system_stm32wlxx.o [1]
+  .rodata            const     0x801'4622       0x0  zero_init3.o [4]
+  .rodata            const     0x801'4622       0x0  packbits_init_single.o [4]
+  Initializer bytes  const     0x801'4622      0xb5  <for P2-1>
+                             - 0x801'46d7  0x1'459f
+
+"P2", part 1 of 3:                            0x293
+  P2-1                        0x2000'0000     0x293  <Init block>
+    .data            inited   0x2000'0000       0x4  app.o [1]
+    .data            inited   0x2000'0004       0x4  app.o [1]
+    .data            inited   0x2000'0008      0x34  app.o [1]
+    .data            inited   0x2000'003c      0x10  app.o [1]
+    .data            inited   0x2000'004c       0x8  app.o [1]
+    .data            inited   0x2000'0054      0x18  app.o [1]
+    .data            inited   0x2000'006c      0x18  LmHandler.o [1]
+    .data            inited   0x2000'0084     0x154  LmHandler.o [1]
+    .data            inited   0x2000'01d8      0x10  LmHandler.o [1]
+    .data            inited   0x2000'01e8      0x64  LmhpCompliance.o [1]
+    .data            inited   0x2000'024c       0x8  LoRaMacCrypto.o [1]
+    .data            inited   0x2000'0254      0x28  stm32_seq.o [1]
+    .data            inited   0x2000'027c       0xc  stm32wlxx_hal.o [1]
+    .data            inited   0x2000'0288       0x4  system_stm32wlxx.o [1]
+    .data            inited   0x2000'028c       0x4  utilities.o [1]
+    .data            inited   0x2000'0290       0x1  app.o [1]
+    .data            inited   0x2000'0291       0x1  appinit.o [1]
+    .data            inited   0x2000'0292       0x1  radio.o [1]
+                            - 0x2000'0293     0x293
+
+"P2", part 2 of 3:                           0x2264
+  .bss               zero     0x2000'0294     0xc38  LoRaMac.o [1]
+  .bss               zero     0x2000'0ecc     0x618  stm32_adv_trace.o [1]
+  .bss               zero     0x2000'14e4     0x1f4  debug.o [1]
+  .bss               zero     0x2000'1800     0x138  main.o [1]
+  .bss               zero     0x2000'1938     0x100  radio.o [1]
+  .bss               zero     0x2000'1a38      0xfc  LoRaMacCommands.o [1]
+  .bss               zero     0x2000'1b34      0xf4  app.o [1]
+  .bss               zero     0x2000'1c28      0xc8  main.o [1]
+  .bss               zero     0x2000'1cf0      0xc8  main.o [1]
+  .bss               zero     0x2000'1db8      0xc8  main.o [1]
+  .bss               zero     0x2000'1e80      0x8c  radio.o [1]
+  .bss               zero     0x2000'1f0c      0x80  stm32_seq.o [1]
+  .bss               zero     0x2000'1f8c      0x64  adc.o [1]
+  .bss               zero     0x2000'1ff0      0x64  main.o [1]
+  .bss               zero     0x2000'2054      0x60  main.o [1]
+  .bss               zero     0x2000'20b4      0x60  main.o [1]
+  .bss               zero     0x2000'2114      0x60  main.o [1]
+  .bss               zero     0x2000'2174      0x60  main.o [1]
+  .bss               zero     0x2000'21d4      0x60  main.o [1]
+  .bss               zero     0x2000'2234      0x60  main.o [1]
+  .bss               zero     0x2000'2294      0x60  main.o [1]
+  .bss               zero     0x2000'22f4      0x4c  main.o [1]
+  .bss               zero     0x2000'2340      0x38  rtc.o [1]
+  .bss               zero     0x2000'2378      0x24  LoRaMacConfirmQueue.o [1]
+  .bss               zero     0x2000'239c      0x18  app.o [1]
+  .bss               zero     0x2000'23b4      0x18  app.o [1]
+  .bss               zero     0x2000'23cc      0x18  app.o [1]
+  .bss               zero     0x2000'23e4      0x18  app.o [1]
+  .bss               zero     0x2000'23fc      0x18  LmHandler.o [1]
+  .bss               zero     0x2000'2414      0x18  LoRaMac.o [1]
+  .bss               zero     0x2000'242c       0xc  subghz.o [1]
+  .bss               zero     0x2000'2438      0x14  bin.o [1]
+  .bss               zero     0x2000'244c      0x10  debug.o [1]
+  .bss               zero     0x2000'245c      0x10  lora_info.o [1]
+  .bss               zero     0x2000'246c       0x8  radio_driver.o [1]
+  .bss               zero     0x2000'2474       0x8  radio_driver.o [1]
+  .bss               zero     0x2000'247c       0x8  RegionAS923.o [1]
+  .bss               zero     0x2000'2484       0x8  RegionAU915.o [1]
+  .bss               zero     0x2000'248c       0x8  RegionCN470.o [1]
+  .bss               zero     0x2000'2494       0x8  RegionCN779.o [1]
+  .bss               zero     0x2000'249c       0x8  RegionEU433.o [1]
+  .bss               zero     0x2000'24a4       0x8  RegionEU868.o [1]
+  .bss               zero     0x2000'24ac       0x8  RegionIN865.o [1]
+  .bss               zero     0x2000'24b4       0x8  RegionRU864.o [1]
+  .bss               zero     0x2000'24bc       0x8  RegionUS915.o [1]
+  .bss               zero     0x2000'24c4       0x8  stm32_lpm.o [1]
+  .bss               zero     0x2000'24cc       0x8  timer_if.o [1]
+  .bss               zero     0x2000'24d4       0x4  LoRaMacCrypto.o [1]
+  .bss               zero     0x2000'24d8       0x4  main.o [1]
+  .bss               zero     0x2000'24dc       0x4  main.o [1]
+  .bss               zero     0x2000'24e0       0x4  main.o [1]
+  .bss               zero     0x2000'24e4       0x4  main.o [1]
+  .bss               zero     0x2000'24e8       0x4  sensor.o [1]
+  .bss               zero     0x2000'24ec       0x4  soft-se.o [1]
+  .bss               zero     0x2000'24f0       0x4  stm32_timer.o [1]
+  .bss               zero     0x2000'24f4       0x1  appinit.o [1]
+                            - 0x2000'24f5    0x2261
+
+"P2", part 3 of 3:                            0x800
+  CSTACK                      0x2000'24f8     0x800  <Block>
+    CSTACK           uninit   0x2000'24f8     0x800  <Block tail>
+                            - 0x2000'2cf8     0x800
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x801'46d7   0x803'ffff  0x2'b929
+  0x2000'0293  0x2000'0293       0x1
+  0x2000'2cf8  0x2000'7fff    0x5308
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x2261:
+          0x2000'0294  0x2261
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0xb5 (27% of destination):
+           0x801'4622    0xb5
+    1 destination range, total size 0x293:
+          0x2000'0000   0x293
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                     ro code  ro data  rw data
+    ------                     -------  -------  -------
+command line/config:
+    ----------------------------------------------------
+    Total:
+
+C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj: [1]
+    LmHandler.o                  1'904      341      404
+    LmhpCompliance.o               756       27      100
+    LoRaMac.o                    9'824             3'152
+    LoRaMacAdr.o                   200
+    LoRaMacClassB.o                 78
+    LoRaMacCommands.o              504               252
+    LoRaMacConfirmQueue.o          416                36
+    LoRaMacCrypto.o              1'660        2       12
+    LoRaMacParser.o                362
+    LoRaMacSerializer.o            324
+    NvmDataMgmt.o                   10
+    Region.o                     1'684
+    RegionAS923.o                2'772                 8
+    RegionAU915.o                2'776      108        8
+    RegionBaseUS.o                 144
+    RegionCN470.o                2'100                 8
+    RegionCN779.o                2'696                 8
+    RegionCommon.o               1'820       24
+    RegionEU433.o                2'684                 8
+    RegionEU868.o                2'824      144        8
+    RegionIN865.o                2'712                 8
+    RegionRU864.o                2'648                 8
+    RegionUS915.o                2'764       64        8
+    adc.o                          148               100
+    adc_if.o                       268
+    app.o                        1'060      675      449
+    appinit.o                      668                 2
+    bin.o                          380                20
+    cmac.o                         506
+    debug.o                        358               516
+    led.o                          116
+    lora_info.o                     36                16
+    lorawan_aes.o                1'236      768
+    main.o                         968             1'776
+    radio.o                      4'725      132      397
+    radio_board_if.o               212
+    radio_driver.o               2'444      176       16
+    radio_fw.o                      36
+    rtc.o                          228                56
+    sensor.o                       108       28        4
+    soft-se.o                    1'344      276        4
+    startup_stm32wl55xx_cm4.o      484
+    stm32_adv_trace.o              624             1'560
+    stm32_lpm.o                    136                 8
+    stm32_lpm_if.o                  68       24
+    stm32_mem.o                     36
+    stm32_seq.o                    340       11      168
+    stm32_systime.o                468
+    stm32_timer.o                  612                 4
+    stm32_tiny_vsnprintf.o         596       80
+    stm32wlxx_hal.o                184        3       12
+    stm32wlxx_hal_adc.o          2'004
+    stm32wlxx_hal_adc_ex.o         156
+    stm32wlxx_hal_cortex.o         156
+    stm32wlxx_hal_dma.o            844
+    stm32wlxx_hal_gpio.o           428
+    stm32wlxx_hal_i2c.o          1'486
+    stm32wlxx_hal_msp.o            556
+    stm32wlxx_hal_pwr.o             84
+    stm32wlxx_hal_pwr_ex.o         148
+    stm32wlxx_hal_rcc.o          2'172
+    stm32wlxx_hal_rcc_ex.o         432
+    stm32wlxx_hal_rtc.o            902
+    stm32wlxx_hal_rtc_ex.o         194
+    stm32wlxx_hal_spi.o            284
+    stm32wlxx_hal_subghz.o       1'268
+    stm32wlxx_hal_uart.o         4'234
+    stm32wlxx_hal_uart_ex.o        254
+    stm32wlxx_it.o                 290
+    subghz.o                        76                12
+    sys_app.o                      220
+    system_stm32wlxx.o               2      162        4
+    timer_if.o                     426       64        8
+    usart_if.o                      50       16
+    util_if.o                      124
+    utilities.o                    192        1        4
+    ----------------------------------------------------
+    Total:                      79'033    3'126    9'164
+
+dl7M_tlf.a: [2]
+    exit.o                           4
+    low_level_init.o                 4
+    ----------------------------------------------------
+    Total:                           8
+
+m7M_tl.a: [3]
+    DblToS32.o                      58
+    FltAdd.o                       214
+    FltSub.o                       128
+    FltToDbl.o                      72
+    U32ToFlt.o                      28
+    floor.o                         88
+    ----------------------------------------------------
+    Total:                         588
+
+rt7M_tl.a: [4]
+    ABImemclr4.o                     6
+    ABImemcpy.o                    166
+    ABImemset.o                    102
+    ABImemset48.o                   50
+    I64DivMod_small.o              262
+    I64DivZer.o                      2
+    cexit.o                         10
+    cmain.o                         30
+    cstartup_M.o                    28
+    data_init.o                     40
+    memset.o                        20
+    packbits_init_single.o          56
+    strlen_small.o                  20
+    zero_init3.o                    58
+    ----------------------------------------------------
+    Total:                         850
+
+shb_l.a: [5]
+    exit.o                          20
+    ----------------------------------------------------
+    Total:                          20
+
+    Gaps                            10        3      296
+    Linker created                           33    2'048
+--------------------------------------------------------
+    Grand Total:                80'509    3'162   11'508
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x801'42f8          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x801'4318          --   Gb  - Linker created -
+?main                    0x801'43f9         Code  Gb  cmain.o [4]
+ADC_ConversionStop       0x800'ee7f   0x4a  Code  Gb  stm32wlxx_hal_adc.o [1]
+ADC_Disable              0x800'efb5   0x64  Code  Gb  stm32wlxx_hal_adc.o [1]
+ADC_Enable               0x800'eed1   0x88  Code  Gb  stm32wlxx_hal_adc.o [1]
+ADC_ReadChannels         0x800'e0eb   0x66  Code  Lc  adc_if.o [1]
+ADV_TRACE_Buffer        0x2000'0ee4  0x400  Data  Lc  stm32_adv_trace.o [1]
+ADV_TRACE_Ctx           0x2000'0ecc   0x18  Data  Lc  stm32_adv_trace.o [1]
+AES_CMAC_Final           0x800'abb1   0xac  Code  Gb  cmac.o [1]
+AES_CMAC_Init            0x800'aacb   0x22  Code  Gb  cmac.o [1]
+AES_CMAC_SetKey          0x800'aaed    0xa  Code  Gb  cmac.o [1]
+AES_CMAC_Update          0x800'aaf7   0x9c  Code  Gb  cmac.o [1]
+AHBPrescTable            0x801'3ef4   0x40  Data  Gb  system_stm32wlxx.o [1]
+APBPrescTable            0x801'43d8   0x20  Data  Gb  system_stm32wlxx.o [1]
+ActivationType          0x2000'0290    0x1  Data  Lc  app.o [1]
+AppData                 0x2000'004c    0x8  Data  Lc  app.o [1]
+AppDataBuffer           0x2000'1b34   0xf4  Data  Lc  app.o [1]
+AppDataBuffer           0x2000'00e4   0xf4  Data  Lc  LmHandler.o [1]
+App_Init                 0x801'2521  0x10a  Code  Gb  app.o [1]
+Bandwidths               0x800'c328    0x4  Data  Gb  radio.o [1]
+BandwidthsAS923          0x800'5720   0x20  Data  Lc  RegionAS923.o [1]
+BandwidthsAU915          0x801'40c4   0x40  Data  Lc  RegionAU915.o [1]
+BandwidthsCN470          0x800'6a5c   0x18  Data  Lc  RegionCN470.o [1]
+BandwidthsCN779          0x800'74b8   0x20  Data  Lc  RegionCN779.o [1]
+BandwidthsEU433          0x800'7f34   0x20  Data  Lc  RegionEU433.o [1]
+BandwidthsEU868          0x800'8a3c   0x20  Data  Lc  RegionEU868.o [1]
+BandwidthsIN865          0x800'94cc   0x20  Data  Lc  RegionIN865.o [1]
+BandwidthsRU864          0x800'aa04   0x20  Data  Lc  RegionRU864.o [1]
+BandwidthsUS915          0x801'4104   0x40  Data  Lc  RegionUS915.o [1]
+BusFault_Handler         0x800'e3f3    0x2  Code  Gb  stm32wlxx_it.o [1]
+CSTACK$$Base            0x2000'24f8          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2cf8          --   Gb  - Linker created -
+CommandsCtx             0x2000'1a38   0xfc  Data  Lc  LoRaMacCommands.o [1]
+CommissioningParams     0x2000'006c   0x18  Data  Lc  LmHandler.o [1]
+ComplianceTestState     0x2000'01e8   0x14  Data  Lc  LmhpCompliance.o [1]
+ComplianceTxNextPacketTimer
+                        0x2000'0234   0x18  Data  Lc  LmhpCompliance.o [1]
+ComputeCmac              0x800'429d   0x76  Code  Lc  soft-se.o [1]
+ConfirmQueueCtx         0x2000'2378   0x24  Data  Lc  LoRaMacConfirmQueue.o [1]
+Crc32                    0x800'3773   0x32  Code  Gb  utilities.o [1]
+CryptoNvm               0x2000'24d4    0x4  Data  Lc  LoRaMacCrypto.o [1]
+CtxRestoreDone          0x2000'0098    0x1  Data  Lc  LmHandler.o [1]
+CurrentTaskIdx          0x2000'0278    0x4  Data  Lc  stm32_seq.o [1]
+DMA1_Channel1_IRQHandler
+                         0x800'e41d    0x6  Code  Gb  stm32wlxx_it.o [1]
+DMA1_Channel2_IRQHandler
+                         0x800'e423    0x6  Code  Gb  stm32wlxx_it.o [1]
+DMA1_Channel4_IRQHandler
+                         0x800'e429    0x6  Code  Gb  stm32wlxx_it.o [1]
+DMA1_Channel5_IRQHandler
+                         0x800'e411    0x6  Code  Gb  stm32wlxx_it.o [1]
+DMA1_Channel6_IRQHandler
+                         0x800'e417    0x6  Code  Gb  stm32wlxx_it.o [1]
+DMA2_Channel1_IRQHandler
+                         0x800'e405    0x6  Code  Gb  stm32wlxx_it.o [1]
+DMA2_Channel2_IRQHandler
+                         0x800'e40b    0x6  Code  Gb  stm32wlxx_it.o [1]
+DMA_CalcDMAMUXChannelBaseAndMask
+                         0x801'0411   0x4c  Code  Lc  stm32wlxx_hal_dma.o [1]
+DMA_CalcDMAMUXRequestGenBaseAndMask
+                         0x801'045d   0x20  Code  Lc  stm32wlxx_hal_dma.o [1]
+DatarateOffsetsAU915     0x801'4278   0x2c  Data  Lc  RegionAU915.o [1]
+DatarateOffsetsUS915     0x800'9fc0   0x14  Data  Lc  RegionUS915.o [1]
+DataratesAS923           0x800'5718    0x8  Data  Lc  RegionAS923.o [1]
+DataratesAU915           0x800'6200   0x10  Data  Lc  RegionAU915.o [1]
+DataratesCN470           0x800'6a54    0x8  Data  Lc  RegionCN470.o [1]
+DataratesCN779           0x800'74b0    0x8  Data  Lc  RegionCN779.o [1]
+DataratesEU433           0x800'7f2c    0x8  Data  Lc  RegionEU433.o [1]
+DataratesEU868           0x800'8a34    0x8  Data  Lc  RegionEU868.o [1]
+DataratesIN865           0x800'94c4    0x8  Data  Lc  RegionIN865.o [1]
+DataratesRU864           0x800'a9fc    0x8  Data  Lc  RegionRU864.o [1]
+DataratesUS915           0x800'9fb0   0x10  Data  Lc  RegionUS915.o [1]
+DebugMon_Handler         0x800'e3f9    0x2  Code  Gb  stm32wlxx_it.o [1]
+DeriveSessionKey10x      0x800'3a57   0x6a  Code  Lc  LoRaMacCrypto.o [1]
+DisplayClassUpdate       0x801'32b1   0x10  Code  Lc  LmHandler.o [1]
+EXTI0_IRQHandler         0x800'e467    0x4  Code  Gb  stm32wlxx_it.o [1]
+EXTI15_10_IRQHandler     0x800'e481    0x6  Code  Gb  stm32wlxx_it.o [1]
+EXTI1_IRQHandler         0x800'e46b    0x4  Code  Gb  stm32wlxx_it.o [1]
+EXTI2_IRQHandler         0x800'e46f    0x4  Code  Gb  stm32wlxx_it.o [1]
+EXTI3_IRQHandler         0x800'e473    0x4  Code  Gb  stm32wlxx_it.o [1]
+EXTI4_IRQHandler         0x800'e477    0x4  Code  Gb  stm32wlxx_it.o [1]
+EXTI9_5_IRQHandler       0x800'e47b    0x6  Code  Gb  stm32wlxx_it.o [1]
+EffectiveRx1DrOffsetAS923
+                         0x800'5758    0x8  Data  Lc  RegionAS923.o [1]
+EffectiveRx1DrOffsetIN865
+                         0x800'94fc    0x8  Data  Lc  RegionIN865.o [1]
+Error_Handler            0x800'e4d9    0x2  Code  Gb  stm32wlxx_it.o [1]
+EvtSet                  0x2000'0270    0x4  Data  Lc  stm32_seq.o [1]
+EvtWaited               0x2000'0274    0x4  Data  Lc  stm32_seq.o [1]
+FrequencyError          0x2000'2478    0x4  Data  Gb  radio_driver.o [1]
+FskBandwidths            0x801'3d30   0xb0  Data  Lc  radio_driver.o [1]
+GPIO_EXTI_IRQHandler     0x800'e453   0x14  Code  Gb  stm32wlxx_it.o [1]
+GetBatteryLevel          0x800'd851   0x2e  Code  Gb  sys_app.o [1]
+GetDevAddr               0x800'd8ed   0x22  Code  Gb  sys_app.o [1]
+GetDutyCycle             0x800'b235   0x2e  Code  Lc  RegionCommon.o [1]
+GetElement               0x800'2edd   0x2a  Code  Lc  LoRaMacConfirmQueue.o [1]
+GetKeyAddrItem           0x800'3a2f   0x28  Code  Lc  LoRaMacCrypto.o [1]
+GetKeyByID               0x800'4285   0x18  Code  Lc  soft-se.o [1]
+GetLastFcntDown          0x800'3ac1   0x40  Code  Lc  LoRaMacCrypto.o [1]
+GetMaxAppPayloadWithoutFOptsLength
+                         0x800'0f05   0x34  Code  Lc  LoRaMac.o [1]
+GetTemperatureLevel      0x800'd87f   0x12  Code  Gb  sys_app.o [1]
+GetTimeOnAir             0x800'4cd5   0x54  Code  Lc  RegionAS923.o [1]
+GetTimeOnAir             0x800'57cd   0x34  Code  Lc  RegionAU915.o [1]
+GetTimeOnAir             0x800'62a5   0x34  Code  Lc  RegionCN470.o [1]
+GetTimeOnAir             0x800'6ab5   0x54  Code  Lc  RegionCN779.o [1]
+GetTimeOnAir             0x800'753d   0x54  Code  Lc  RegionEU433.o [1]
+GetTimeOnAir             0x800'801d   0x54  Code  Lc  RegionEU868.o [1]
+GetTimeOnAir             0x800'8ac1   0x54  Code  Lc  RegionIN865.o [1]
+GetTimeOnAir             0x800'a025   0x54  Code  Lc  RegionRU864.o [1]
+GetTimeOnAir             0x800'95b3   0x34  Code  Lc  RegionUS915.o [1]
+GetUniqueId              0x800'd891   0x5c  Code  Gb  sys_app.o [1]
+HAL_ADCEx_Calibration_Start
+                         0x800'e7bd   0x9c  Code  Gb  stm32wlxx_hal_adc_ex.o [1]
+HAL_ADC_ConfigChannel    0x800'ecbb  0x1a2  Code  Gb  stm32wlxx_hal_adc.o [1]
+HAL_ADC_DeInit           0x800'eaa3   0xa0  Code  Gb  stm32wlxx_hal_adc.o [1]
+HAL_ADC_GetValue         0x800'ecb5    0x6  Code  Gb  stm32wlxx_hal_adc.o [1]
+HAL_ADC_Init             0x800'e87f  0x218  Code  Gb  stm32wlxx_hal_adc.o [1]
+HAL_ADC_MspDeInit        0x800'e79b   0x14  Code  Gb  adc.o [1]
+HAL_ADC_MspInit          0x800'e779   0x22  Code  Gb  adc.o [1]
+HAL_ADC_PollForConversion
+                         0x800'eb93   0xc0  Code  Gb  stm32wlxx_hal_adc.o [1]
+HAL_ADC_Start            0x800'eb43   0x30  Code  Gb  stm32wlxx_hal_adc.o [1]
+HAL_ADC_Stop             0x800'eb73   0x20  Code  Gb  stm32wlxx_hal_adc.o [1]
+HAL_DBGMCU_DisableDBGSleepMode
+                         0x800'e1b1    0x4  Code  Gb  stm32wlxx_hal.o [1]
+HAL_DBGMCU_DisableDBGStandbyMode
+                         0x800'e1d9    0xc  Code  Gb  stm32wlxx_hal.o [1]
+HAL_DBGMCU_DisableDBGStopMode
+                         0x800'e1c1    0xc  Code  Gb  stm32wlxx_hal.o [1]
+HAL_DBGMCU_EnableDBGSleepMode
+                         0x800'e1ad    0x4  Code  Gb  stm32wlxx_hal.o [1]
+HAL_DBGMCU_EnableDBGStandbyMode
+                         0x800'e1cd    0xc  Code  Gb  stm32wlxx_hal.o [1]
+HAL_DBGMCU_EnableDBGStopMode
+                         0x800'e1b5    0xc  Code  Gb  stm32wlxx_hal.o [1]
+HAL_DMA_Abort            0x801'0245   0x68  Code  Gb  stm32wlxx_hal_dma.o [1]
+HAL_DMA_Abort_IT         0x801'02ad   0x6c  Code  Gb  stm32wlxx_hal_dma.o [1]
+HAL_DMA_ConfigChannelAttributes
+                         0x801'03f1   0x20  Code  Gb  stm32wlxx_hal_dma.o [1]
+HAL_DMA_GetState         0x801'03eb    0x6  Code  Gb  stm32wlxx_hal_dma.o [1]
+HAL_DMA_IRQHandler       0x801'0319   0xd0  Code  Gb  stm32wlxx_hal_dma.o [1]
+HAL_DMA_Init             0x801'0169   0x90  Code  Gb  stm32wlxx_hal_dma.o [1]
+HAL_Delay                0x800'd91d    0xc  Code  Gb  sys_app.o [1]
+HAL_GPIO_Init            0x800'e579  0x182  Code  Gb  stm32wlxx_hal_gpio.o [1]
+HAL_GPIO_ReadPin         0x800'e6fb    0xc  Code  Gb  stm32wlxx_hal_gpio.o [1]
+HAL_GPIO_WritePin        0x800'e707    0xa  Code  Gb  stm32wlxx_hal_gpio.o [1]
+HAL_GetTick              0x800'd919    0x4  Code  Gb  sys_app.o [1]
+HAL_GetUIDw0             0x800'e19b    0x6  Code  Gb  stm32wlxx_hal.o [1]
+HAL_GetUIDw1             0x800'e1a1    0x6  Code  Gb  stm32wlxx_hal.o [1]
+HAL_GetUIDw2             0x800'e1a7    0x6  Code  Gb  stm32wlxx_hal.o [1]
+HAL_I2C_ER_IRQHandler    0x801'04c5   0x60  Code  Gb  stm32wlxx_hal_i2c.o [1]
+HAL_I2C_EV_IRQHandler    0x801'04b5   0x10  Code  Gb  stm32wlxx_hal_i2c.o [1]
+HAL_Init                 0x800'e175   0x26  Code  Gb  stm32wlxx_hal.o [1]
+HAL_InitTick             0x800'd915    0x4  Code  Gb  sys_app.o [1]
+HAL_MspInit              0x800'f8c7    0x2  Code  Gb  stm32wlxx_hal_msp.o [1]
+HAL_NVIC_EnableIRQ       0x800'e54d   0x16  Code  Gb  stm32wlxx_hal_cortex.o [1]
+HAL_NVIC_SetPriority     0x800'e511   0x3a  Code  Gb  stm32wlxx_hal_cortex.o [1]
+HAL_NVIC_SetPriorityGrouping
+                         0x800'e4f7   0x1a  Code  Gb  stm32wlxx_hal_cortex.o [1]
+HAL_PWREx_DisableLowPowerRunMode
+                         0x801'1f19   0x2e  Code  Gb  stm32wlxx_hal_pwr_ex.o [1]
+HAL_PWREx_EnableLowPowerRunMode
+                         0x801'1f0d    0x2  Code  Gb  stm32wlxx_hal_pwr_ex.o [1]
+HAL_PWREx_EnterSTOP2Mode
+                         0x801'1f5f   0x26  Code  Gb  stm32wlxx_hal_pwr_ex.o [1]
+HAL_PWREx_GetVoltageRange
+                         0x801'1f01    0xc  Code  Gb  stm32wlxx_hal_pwr_ex.o [1]
+HAL_PWR_EnableBkUpAccess
+                         0x801'1ead    0xc  Code  Gb  stm32wlxx_hal_pwr.o [1]
+HAL_PWR_EnterSLEEPMode   0x801'1eb9   0x3a  Code  Gb  stm32wlxx_hal_pwr.o [1]
+HAL_RCCEx_PeriphCLKConfig
+                         0x801'1fd1  0x162  Code  Gb  stm32wlxx_hal_rcc_ex.o [1]
+HAL_RCC_ClockConfig      0x800'f4e9  0x1ae  Code  Gb  stm32wlxx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq      0x800'f76f    0xa  Code  Gb  stm32wlxx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq     0x800'f78b   0x10  Code  Gb  stm32wlxx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq     0x800'f79b    0xe  Code  Gb  stm32wlxx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                         0x800'f6af   0xc0  Code  Gb  stm32wlxx_hal_rcc.o [1]
+HAL_RCC_OscConfig        0x800'f03b  0x46c  Code  Gb  stm32wlxx_hal_rcc.o [1]
+HAL_RTCEx_AlarmBEventCallback
+                         0x801'2145    0x2  Code  Wk  stm32wlxx_hal_rtc_ex.o [1]
+HAL_RTCEx_BKUPRead       0x800'ffe5    0xa  Code  Gb  stm32wlxx_hal_rtc_ex.o [1]
+HAL_RTCEx_BKUPWrite      0x800'ffdb    0xa  Code  Gb  stm32wlxx_hal_rtc_ex.o [1]
+HAL_RTCEx_EnableBypassShadow
+                         0x800'ff51   0x2a  Code  Gb  stm32wlxx_hal_rtc_ex.o [1]
+HAL_RTCEx_SSRUEventCallback
+                         0x800'e343    0xe  Code  Gb  timer_if.o [1]
+HAL_RTCEx_SSRUIRQHandler
+                         0x800'ffbd   0x16  Code  Gb  stm32wlxx_hal_rtc_ex.o [1]
+HAL_RTCEx_SetSSRU_IT     0x800'ff7b   0x36  Code  Gb  stm32wlxx_hal_rtc_ex.o [1]
+HAL_RTC_AlarmAEventCallback
+                         0x800'e33f    0x4  Code  Gb  timer_if.o [1]
+HAL_RTC_AlarmIRQHandler
+                         0x800'fe29   0x30  Code  Gb  stm32wlxx_hal_rtc.o [1]
+HAL_RTC_DeactivateAlarm
+                         0x800'fdbf   0x6a  Code  Gb  stm32wlxx_hal_rtc.o [1]
+HAL_RTC_Init             0x800'fbb9   0x96  Code  Gb  stm32wlxx_hal_rtc.o [1]
+HAL_RTC_MspInit          0x800'fb3d   0x6e  Code  Gb  rtc.o [1]
+HAL_RTC_SetAlarm_IT      0x800'fc4f   0x8c  Code  Gb  stm32wlxx_hal_rtc.o [1]
+HAL_RTC_WaitForSynchro   0x800'fe59   0x2e  Code  Gb  stm32wlxx_hal_rtc.o [1]
+HAL_ResumeTick           0x801'40b5   0x10  Code  Wk  stm32wlxx_hal.o [1]
+HAL_SPI_IRQHandler       0x801'0a79  0x100  Code  Gb  stm32wlxx_hal_spi.o [1]
+HAL_SUBGHZ_CADStatusCallback
+                         0x800'd715   0x16  Code  Gb  radio_driver.o [1]
+HAL_SUBGHZ_CRCErrorCallback
+                         0x800'd70d    0x8  Code  Gb  radio_driver.o [1]
+HAL_SUBGHZ_ExecGetCmd    0x800'dd31   0x42  Code  Gb  stm32wlxx_hal_subghz.o [1]
+HAL_SUBGHZ_ExecSetCmd    0x800'dccb   0x66  Code  Gb  stm32wlxx_hal_subghz.o [1]
+HAL_SUBGHZ_HeaderErrorCallback
+                         0x800'd735    0x8  Code  Gb  radio_driver.o [1]
+HAL_SUBGHZ_HeaderValidCallback
+                         0x800'd74d    0x8  Code  Gb  radio_driver.o [1]
+HAL_SUBGHZ_IRQHandler    0x800'de6b   0x96  Code  Gb  stm32wlxx_hal_subghz.o [1]
+HAL_SUBGHZ_Init          0x800'db75   0x90  Code  Gb  stm32wlxx_hal_subghz.o [1]
+HAL_SUBGHZ_MspInit       0x800'd965   0x2a  Code  Gb  subghz.o [1]
+HAL_SUBGHZ_PreambleDetectedCallback
+                         0x800'd73d    0x8  Code  Gb  radio_driver.o [1]
+HAL_SUBGHZ_ReadBuffer    0x800'de15   0x4a  Code  Gb  stm32wlxx_hal_subghz.o [1]
+HAL_SUBGHZ_ReadRegisters
+                         0x800'dc6d   0x52  Code  Gb  stm32wlxx_hal_subghz.o [1]
+HAL_SUBGHZ_RxCpltCallback
+                         0x800'd705    0x8  Code  Gb  radio_driver.o [1]
+HAL_SUBGHZ_RxTxTimeoutCallback
+                         0x800'd72b    0xa  Code  Gb  radio_driver.o [1]
+HAL_SUBGHZ_SyncWordValidCallback
+                         0x800'd745    0x8  Code  Gb  radio_driver.o [1]
+HAL_SUBGHZ_TxCpltCallback
+                         0x800'd6fd    0x8  Code  Gb  radio_driver.o [1]
+HAL_SUBGHZ_WriteBuffer   0x800'ddaf   0x4c  Code  Gb  stm32wlxx_hal_subghz.o [1]
+HAL_SUBGHZ_WriteRegisters
+                         0x800'dc11   0x5c  Code  Gb  stm32wlxx_hal_subghz.o [1]
+HAL_SuspendTick          0x801'40a5   0x10  Code  Wk  stm32wlxx_hal.o [1]
+HAL_UARTEx_DisableFifoMode
+                         0x801'2a95   0x3c  Code  Gb  stm32wlxx_hal_uart_ex.o [1]
+HAL_UARTEx_RxFifoFullCallback
+                         0x801'1c0f    0x2  Code  Wk  stm32wlxx_hal_uart_ex.o [1]
+HAL_UARTEx_SetRxFifoThreshold
+                         0x801'2ae7   0x14  Code  Gb  stm32wlxx_hal_uart_ex.o [1]
+HAL_UARTEx_SetTxFifoThreshold
+                         0x801'2ad1   0x16  Code  Gb  stm32wlxx_hal_uart_ex.o [1]
+HAL_UARTEx_TxFifoEmptyCallback
+                         0x801'2147    0x2  Code  Wk  stm32wlxx_hal_uart_ex.o [1]
+HAL_UARTEx_WakeupCallback
+                         0x801'2b8d    0x2  Code  Wk  stm32wlxx_hal_uart_ex.o [1]
+HAL_UART_GetState        0x801'10e5    0xc  Code  Gb  stm32wlxx_hal_uart.o [1]
+HAL_UART_IRQHandler      0x801'0ddd  0x2b0  Code  Gb  stm32wlxx_hal_uart.o [1]
+HAL_UART_Init            0x801'0b95   0x34  Code  Gb  stm32wlxx_hal_uart.o [1]
+HAL_UART_MspInit         0x800'f913  0x172  Code  Gb  stm32wlxx_hal_msp.o [1]
+HAL_UART_Receive_IT      0x801'0d6b   0x28  Code  Gb  stm32wlxx_hal_uart.o [1]
+HAL_UART_RegisterCallback
+                         0x801'0c29   0x96  Code  Gb  stm32wlxx_hal_uart.o [1]
+HAL_UART_Transmit_IT     0x801'0cc1   0xaa  Code  Gb  stm32wlxx_hal_uart.o [1]
+HAL_UART_TxCpltCallback
+                         0x801'2381   0x4e  Code  Gb  main.o [1]
+HandleRadioRxErrorTimeout
+                         0x800'02bf   0xba  Code  Lc  LoRaMac.o [1]
+HardFault_Handler        0x800'e3e5    0x2  Code  Gb  stm32wlxx_it.o [1]
+I2C2_ER_IRQHandler       0x800'e435    0x6  Code  Gb  stm32wlxx_it.o [1]
+I2C2_EV_IRQHandler       0x800'e42f    0x6  Code  Gb  stm32wlxx_it.o [1]
+I2C_DMAAbort             0x801'09f5   0x14  Code  Lc  stm32wlxx_hal_i2c.o [1]
+I2C_Disable_IRQ          0x801'0a19   0x5e  Code  Lc  stm32wlxx_hal_i2c.o [1]
+I2C_Flush_TXDR           0x801'09d7   0x1c  Code  Lc  stm32wlxx_hal_i2c.o [1]
+I2C_ITAddrCplt           0x801'0645   0x90  Code  Lc  stm32wlxx_hal_i2c.o [1]
+I2C_ITError              0x801'08e3   0xd2  Code  Lc  stm32wlxx_hal_i2c.o [1]
+I2C_ITListenCplt         0x801'087f   0x58  Code  Lc  stm32wlxx_hal_i2c.o [1]
+I2C_ITSlaveCplt          0x801'074b  0x11c  Code  Lc  stm32wlxx_hal_i2c.o [1]
+I2C_ITSlaveSeqCplt       0x801'06d5   0x66  Code  Lc  stm32wlxx_hal_i2c.o [1]
+I2C_Slave_ISR_IT         0x801'0525  0x120  Code  Lc  stm32wlxx_hal_i2c.o [1]
+I2C_TreatErrorCallback   0x801'09b5   0x22  Code  Lc  stm32wlxx_hal_i2c.o [1]
+ImageCalibrated         0x2000'246d    0x1  Data  Lc  radio_driver.o [1]
+IncreaseBufferPointer    0x800'2ec9   0x14  Code  Lc  LoRaMacConfirmQueue.o [1]
+JoinLedTimer            0x2000'23e4   0x18  Data  Lc  app.o [1]
+JoinParams              0x2000'0094    0x4  Data  Lc  LmHandler.o [1]
+KeyAddrList             0x2000'024c    0x8  Data  Lc  LoRaMacCrypto.o [1]
+LL_ADC_REG_IsTriggerSourceSWStart
+                         0x800'e871    0xe  Code  Lc  stm32wlxx_hal_adc.o [1]
+LL_ADC_SetSamplingTimeCommonChannels
+                         0x800'e859   0x18  Code  Lc  stm32wlxx_hal_adc.o [1]
+LL_AHB1_GRP1_EnableClock
+                         0x801'2169   0x18  Code  Lc  main.o [1]
+LL_AHB2_GRP1_EnableClock
+                         0x801'2181   0x18  Code  Lc  main.o [1]
+LL_APB1_GRP1_EnableClock
+                         0x800'f8a9    0x6  Code  Lc  stm32wlxx_hal_msp.o [1]
+LL_APB2_GRP1_EnableClock
+                         0x800'f8af    0x4  Code  Lc  stm32wlxx_hal_msp.o [1]
+LL_EXTI_EnableIT_0_31    0x801'2199    0xc  Code  Lc  main.o [1]
+LL_LPUART_ClearFlag_ORE
+                         0x801'21cd    0x6  Code  Lc  main.o [1]
+LL_LPUART_ClearFlag_WKUP
+                         0x801'21d3    0x8  Code  Lc  main.o [1]
+LL_LPUART_EnableIT_WKUP
+                         0x801'21db   0x1c  Code  Lc  main.o [1]
+LL_LPUART_EnableInStopMode
+                         0x801'21a5   0x14  Code  Lc  main.o [1]
+LL_LPUART_IsActiveFlag_BUSY
+                         0x801'21b9    0xa  Code  Lc  main.o [1]
+LL_LPUART_IsActiveFlag_REACK
+                         0x801'21c3    0xa  Code  Lc  main.o [1]
+LL_RCC_GetAHB3Prescaler
+                         0x800'f02d    0xe  Code  Lc  stm32wlxx_hal_rcc.o [1]
+LL_RCC_LSE_SetDriveCapability
+                         0x801'2149   0x10  Code  Lc  main.o [1]
+LL_RCC_SetClkAfterWakeFromStop
+                         0x801'2159   0x10  Code  Lc  main.o [1]
+LL_RCC_SetI2CClockSource
+                         0x801'1fa3   0x14  Code  Lc  stm32wlxx_hal_rcc_ex.o [1]
+LL_RCC_SetLPTIMClockSource
+                         0x801'1fbd   0x14  Code  Lc  stm32wlxx_hal_rcc_ex.o [1]
+LL_RCC_SetUSARTClockSource
+                         0x801'1f95    0xe  Code  Lc  stm32wlxx_hal_rcc_ex.o [1]
+LPUART1_IRQHandler       0x800'e44d    0x6  Code  Gb  stm32wlxx_it.o [1]
+LimitTxPower             0x800'9539   0x36  Code  Lc  RegionUS915.o [1]
+LmHandlerCallbacks      0x2000'0008   0x34  Data  Lc  app.o [1]
+LmHandlerCallbacks      0x2000'00d4    0x4  Data  Lc  LmHandler.o [1]
+LmHandlerConfigure       0x801'2bfb  0x15c  Code  Gb  LmHandler.o [1]
+LmHandlerDeviceTimeReq   0x801'2f4d    0x6  Code  Gb  LmHandler.o [1]
+LmHandlerGetCurrentClass
+                         0x801'2ff5   0x22  Code  Gb  LmHandler.o [1]
+LmHandlerGetTxDatarate   0x801'3017   0x28  Code  Gb  LmHandler.o [1]
+LmHandlerInit            0x801'2bb5   0x46  Code  Gb  LmHandler.o [1]
+LmHandlerJoin            0x801'2db5   0x70  Code  Gb  LmHandler.o [1]
+LmHandlerJoinStatus      0x801'2e25   0x20  Code  Gb  LmHandler.o [1]
+LmHandlerPackageRegister
+                         0x801'31ef   0x3c  Code  Gb  LmHandler.o [1]
+LmHandlerPackages       0x2000'00c0   0x14  Data  Lc  LmHandler.o [1]
+LmHandlerPackagesNotify
+                         0x801'322b   0x60  Code  Lc  LmHandler.o [1]
+LmHandlerParams         0x2000'003c   0x10  Data  Lc  app.o [1]
+LmHandlerParams         0x2000'0084   0x10  Data  Lc  LmHandler.o [1]
+LmHandlerProcess         0x801'2d6f   0x46  Code  Gb  LmHandler.o [1]
+LmHandlerRequestClass    0x801'2f67   0x8e  Code  Gb  LmHandler.o [1]
+LmHandlerSend            0x801'2e45  0x108  Code  Gb  LmHandler.o [1]
+LmhpComplianceInit       0x801'3419   0x1c  Code  Lc  LmhpCompliance.o [1]
+LmhpComplianceIsInitialized
+                         0x801'3435    0x6  Code  Lc  LmhpCompliance.o [1]
+LmhpComplianceIsRunning
+                         0x801'343b    0xa  Code  Lc  LmhpCompliance.o [1]
+LmhpComplianceOnMcpsConfirm
+                         0x801'3445   0x1e  Code  Lc  LmhpCompliance.o [1]
+LmhpComplianceOnMcpsIndication
+                         0x801'3505  0x1be  Code  Lc  LmhpCompliance.o [1]
+LmhpComplianceOnMlmeConfirm
+                         0x801'3463   0x22  Code  Lc  LmhpCompliance.o [1]
+LmhpCompliancePackage   0x2000'01fc   0x34  Data  Lc  LmhpCompliance.o [1]
+LmhpCompliancePackageFactory
+                         0x801'3415    0x4  Code  Gb  LmhpCompliance.o [1]
+LmhpComplianceParams    0x2000'00d8    0xc  Data  Lc  LmHandler.o [1]
+LmhpComplianceParams    0x2000'0230    0x4  Data  Lc  LmhpCompliance.o [1]
+LmhpComplianceProcess    0x801'36f9    0x2  Code  Lc  LmhpCompliance.o [1]
+LmhpComplianceTxProcess
+                         0x801'3485   0x7e  Code  Lc  LmhpCompliance.o [1]
+LoRaHeaderType          0x2000'2475    0x1  Data  Lc  radio_driver.o [1]
+LoRaMacAdrCalcNext       0x800'48e5   0xc8  Code  Gb  LoRaMacAdr.o [1]
+LoRaMacCallbacks        0x2000'009c   0x14  Data  Lc  LmHandler.o [1]
+LoRaMacClassBBeaconFreqReq
+                         0x800'2e83    0x4  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBBeaconTimerEvent
+                         0x800'2e4d    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBBeaconTimingAns
+                         0x800'2e7f    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBDeviceTimeAns
+                         0x800'2e81    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBHaltBeaconing
+                         0x800'2e69    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBInit        0x800'2e41    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBIsAcquisitionInProgress
+                         0x800'2e49    0x4  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBIsBeaconExpected
+                         0x800'2e57    0x4  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBIsBeaconModeActive
+                         0x800'2e63    0x4  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBIsMulticastExpected
+                         0x800'2e5f    0x4  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBIsPingExpected
+                         0x800'2e5b    0x4  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBIsUplinkCollision
+                         0x800'2e87    0x4  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBMibGetRequestConfirm
+                         0x800'2e71    0x4  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBMulticastSlotTimerEvent
+                         0x800'2e51    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBPingSlotChannelReq
+                         0x800'2e7b    0x4  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBPingSlotInfoAns
+                         0x800'2e79    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBPingSlotTimerEvent
+                         0x800'2e4f    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBProcess     0x800'2e8d    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBResumeBeaconing
+                         0x800'2e6b    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBRxBeacon    0x800'2e53    0x4  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBSetBeaconState
+                         0x800'2e43    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBSetMulticastSlotState
+                         0x800'2e47    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBSetPingSlotInfo
+                         0x800'2e67    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBSetPingSlotState
+                         0x800'2e45    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBStopRxSlots
+                         0x800'2e8b    0x2  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacClassBSwitchClass
+                         0x800'2e6d    0x4  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacCommandsAddCmd    0x800'3fbd   0x7e  Code  Gb  LoRaMacCommands.o [1]
+LoRaMacCommandsGetCmdSize
+                         0x800'4165   0x38  Code  Gb  LoRaMacCommands.o [1]
+LoRaMacCommandsGetSizeSerializedCmds
+                         0x800'40cd   0x12  Code  Gb  LoRaMacCommands.o [1]
+LoRaMacCommandsInit      0x800'3fa5   0x18  Code  Gb  LoRaMacCommands.o [1]
+LoRaMacCommandsRemoveCmd
+                         0x800'403b   0x50  Code  Gb  LoRaMacCommands.o [1]
+LoRaMacCommandsRemoveNoneStickyCmds
+                         0x800'408b   0x1c  Code  Gb  LoRaMacCommands.o [1]
+LoRaMacCommandsRemoveStickyAnsCmds
+                         0x800'40a7   0x26  Code  Gb  LoRaMacCommands.o [1]
+LoRaMacCommandsSerializeCmds
+                         0x800'40df   0x5e  Code  Gb  LoRaMacCommands.o [1]
+LoRaMacCommandsStickyCmdsPending
+                         0x800'413d   0x22  Code  Gb  LoRaMacCommands.o [1]
+LoRaMacConfirmQueueAdd   0x800'2f2f   0x34  Code  Gb  LoRaMacConfirmQueue.o [1]
+LoRaMacConfirmQueueGetCnt
+                         0x800'3049    0x8  Code  Gb  LoRaMacConfirmQueue.o [1]
+LoRaMacConfirmQueueGetStatus
+                         0x800'2f9f   0x1c  Code  Gb  LoRaMacConfirmQueue.o [1]
+LoRaMacConfirmQueueHandleCb
+                         0x800'2ff5   0x54  Code  Gb  LoRaMacConfirmQueue.o [1]
+LoRaMacConfirmQueueInit
+                         0x800'2f07   0x28  Code  Gb  LoRaMacConfirmQueue.o [1]
+LoRaMacConfirmQueueIsCmdActive
+                         0x800'2fe3   0x12  Code  Gb  LoRaMacConfirmQueue.o [1]
+LoRaMacConfirmQueueIsFull
+                         0x800'3051   0x12  Code  Gb  LoRaMacConfirmQueue.o [1]
+LoRaMacConfirmQueueRemoveFirst
+                         0x800'2f63   0x1c  Code  Gb  LoRaMacConfirmQueue.o [1]
+LoRaMacConfirmQueueSetStatus
+                         0x800'2f7f   0x20  Code  Gb  LoRaMacConfirmQueue.o [1]
+LoRaMacConfirmQueueSetStatusCmn
+                         0x800'2fbb   0x28  Code  Gb  LoRaMacConfirmQueue.o [1]
+LoRaMacCryptoDeriveMcKEKey
+                         0x800'3f79   0x20  Code  Gb  LoRaMacCrypto.o [1]
+LoRaMacCryptoDeriveMcRootKey
+                         0x800'3f45   0x34  Code  Gb  LoRaMacCrypto.o [1]
+LoRaMacCryptoGetFCntDown
+                         0x800'3b5b   0x70  Code  Gb  LoRaMacCrypto.o [1]
+LoRaMacCryptoGetFCntUp   0x800'3b45   0x16  Code  Gb  LoRaMacCrypto.o [1]
+LoRaMacCryptoHandleJoinAccept
+                         0x800'3c73   0xde  Code  Gb  LoRaMacCrypto.o [1]
+LoRaMacCryptoInit        0x800'3b01   0x38  Code  Gb  LoRaMacCrypto.o [1]
+LoRaMacCryptoPrepareJoinRequest
+                         0x800'3c27   0x4c  Code  Gb  LoRaMacCrypto.o [1]
+LoRaMacCryptoSecureMessage
+                         0x800'3d51   0xb8  Code  Gb  LoRaMacCrypto.o [1]
+LoRaMacCryptoSetKey      0x800'3bf3   0x34  Code  Gb  LoRaMacCrypto.o [1]
+LoRaMacCryptoSetLrWanVersion
+                         0x800'3b39    0xc  Code  Gb  LoRaMacCrypto.o [1]
+LoRaMacCryptoSetMulticastReference
+                         0x800'3bcb   0x28  Code  Gb  LoRaMacCrypto.o [1]
+LoRaMacCryptoUnsecureMessage
+                         0x800'3e09  0x134  Code  Gb  LoRaMacCrypto.o [1]
+LoRaMacInitialization    0x800'19a1  0x2ac  Code  Gb  LoRaMac.o [1]
+LoRaMacIsBusy            0x800'0379   0x1c  Code  Gb  LoRaMac.o [1]
+LoRaMacMaxEirpTable      0x800'1448   0x10  Data  Lc  LoRaMac.o [1]
+LoRaMacMcpsRequest       0x800'2439  0x320  Code  Gb  LoRaMac.o [1]
+LoRaMacMibClassBSetRequestConfirm
+                         0x800'2e75    0x4  Code  Gb  LoRaMacClassB.o [1]
+LoRaMacMibGetRequestConfirm
+                         0x800'1d25  0x120  Code  Gb  LoRaMac.o [1]
+LoRaMacMibSetRequestConfirm
+                         0x800'1e51  0x3ac  Code  Gb  LoRaMac.o [1]
+LoRaMacMlmeRequest       0x800'2229  0x1e4  Code  Gb  LoRaMac.o [1]
+LoRaMacParserData        0x800'3865   0xc2  Code  Gb  LoRaMacParser.o [1]
+LoRaMacParserJoinAccept
+                         0x800'37bd   0xa8  Code  Gb  LoRaMacParser.o [1]
+LoRaMacPrimitives       0x2000'00b0   0x10  Data  Lc  LmHandler.o [1]
+LoRaMacProcess           0x800'0395  0x994  Code  Gb  LoRaMac.o [1]
+LoRaMacQueryTxPossible   0x800'1c65   0xc0  Code  Gb  LoRaMac.o [1]
+LoRaMacRadioEvents      0x2000'2414    0x4  Data  Gb  LoRaMac.o [1]
+LoRaMacSerializerData    0x800'480d   0xcc  Code  Gb  LoRaMacSerializer.o [1]
+LoRaMacSerializerJoinRequest
+                         0x800'47a1   0x6c  Code  Gb  LoRaMacSerializer.o [1]
+LoRaMacStart             0x800'1c57    0xa  Code  Gb  LoRaMac.o [1]
+LoRaMacTestSetDutyCycleOn
+                         0x800'2759   0x20  Code  Gb  LoRaMac.o [1]
+LoraInfo_GetPtr          0x801'2bad    0x4  Code  Gb  lora_info.o [1]
+LoraInfo_Init            0x801'2b91   0x1c  Code  Gb  lora_info.o [1]
+MSIRangeTable            0x801'3f34   0x40  Data  Gb  system_stm32wlxx.o [1]
+MX_ADC_Init              0x800'e729   0x50  Code  Gb  adc.o [1]
+MX_AppISR                0x801'1c2d    0x2  Code  Gb  appinit.o [1]
+MX_AppMain               0x801'1c11   0x1c  Code  Gb  appinit.o [1]
+MX_Breakpoint            0x800'e3d5    0xe  Code  Gb  stm32wlxx_it.o [1]
+MX_DBG                   0x801'0019    0x4  Code  Gb  debug.o [1]
+MX_DBG_Active            0x801'000f    0xa  Code  Gb  debug.o [1]
+MX_DBG_Init              0x801'00d3   0x6e  Code  Gb  debug.o [1]
+MX_DBG_Receive           0x801'002f   0x42  Code  Gb  debug.o [1]
+MX_DBG_Resume            0x801'0021    0xe  Code  Gb  debug.o [1]
+MX_DBG_RxCallback        0x801'0009    0x6  Code  Gb  debug.o [1]
+MX_DBG_Suspend           0x801'001d    0x4  Code  Gb  debug.o [1]
+MX_DBG_TxCpltCallback    0x801'0001    0x8  Code  Gb  debug.o [1]
+MX_DMA_Init              0x801'233f   0x16  Code  Gb  main.o [1]
+MX_GPIO_Init             0x801'22d7   0x68  Code  Gb  main.o [1]
+MX_LPUART1_UART_Init     0x801'23cf   0x7a  Code  Gb  main.o [1]
+MX_LPUART1_UART_Resume   0x801'2483    0x2  Code  Gb  main.o [1]
+MX_LPUART1_UART_Suspend
+                         0x801'2449   0x3a  Code  Gb  main.o [1]
+MX_LPUART1_UART_Transmit
+                         0x801'2485   0x40  Code  Gb  main.o [1]
+MX_RTC_Init              0x800'fad5   0x68  Code  Gb  rtc.o [1]
+MX_SUBGHZ_Init           0x800'd94d   0x18  Code  Gb  subghz.o [1]
+MX_UART_TxCpltCallback   0x801'2355   0x2c  Code  Gb  main.o [1]
+MX_UTIL_Init             0x800'4c39   0x28  Code  Gb  util_if.o [1]
+MacCtx                  0x2000'09c4  0x508  Data  Lc  LoRaMac.o [1]
+MaxPayloadLength        0x2000'0292    0x1  Data  Lc  radio.o [1]
+MaxPayloadOfDatarateCN470
+                         0x800'6a74    0x8  Data  Lc  RegionCN470.o [1]
+MaxPayloadOfDatarateCN779
+                         0x800'74d8    0x8  Data  Lc  RegionCN779.o [1]
+MaxPayloadOfDatarateDwell0AS923
+                         0x800'5740    0x8  Data  Lc  RegionAS923.o [1]
+MaxPayloadOfDatarateDwell0AU915
+                         0x800'6210   0x10  Data  Lc  RegionAU915.o [1]
+MaxPayloadOfDatarateDwell1AS923
+                         0x800'5750    0x8  Data  Lc  RegionAS923.o [1]
+MaxPayloadOfDatarateDwell1AU915
+                         0x800'6230   0x10  Data  Lc  RegionAU915.o [1]
+MaxPayloadOfDatarateEU433
+                         0x800'7f54    0x8  Data  Lc  RegionEU433.o [1]
+MaxPayloadOfDatarateEU868
+                         0x800'8a5c    0x8  Data  Lc  RegionEU868.o [1]
+MaxPayloadOfDatarateIN865
+                         0x800'94ec    0x8  Data  Lc  RegionIN865.o [1]
+MaxPayloadOfDatarateRU864
+                         0x800'aa24    0x8  Data  Lc  RegionRU864.o [1]
+MaxPayloadOfDatarateRepeaterCN470
+                         0x800'6a7c    0x8  Data  Lc  RegionCN470.o [1]
+MaxPayloadOfDatarateRepeaterCN779
+                         0x800'74e0    0x8  Data  Lc  RegionCN779.o [1]
+MaxPayloadOfDatarateRepeaterDwell0AS923
+                         0x800'5748    0x8  Data  Lc  RegionAS923.o [1]
+MaxPayloadOfDatarateRepeaterDwell0AU915
+                         0x800'6220   0x10  Data  Lc  RegionAU915.o [1]
+MaxPayloadOfDatarateRepeaterDwell1AU915
+                         0x800'6240   0x10  Data  Lc  RegionAU915.o [1]
+MaxPayloadOfDatarateRepeaterEU433
+                         0x800'7f5c    0x8  Data  Lc  RegionEU433.o [1]
+MaxPayloadOfDatarateRepeaterEU868
+                         0x800'8a64    0x8  Data  Lc  RegionEU868.o [1]
+MaxPayloadOfDatarateRepeaterIN865
+                         0x800'94f4    0x8  Data  Lc  RegionIN865.o [1]
+MaxPayloadOfDatarateRepeaterRU864
+                         0x800'aa2c    0x8  Data  Lc  RegionRU864.o [1]
+MaxPayloadOfDatarateRepeaterUS915
+                         0x800'9fe4   0x10  Data  Lc  RegionUS915.o [1]
+MaxPayloadOfDatarateUS915
+                         0x800'9fd4   0x10  Data  Lc  RegionUS915.o [1]
+McpsConfirm              0x801'3041   0x3a  Code  Lc  LmHandler.o [1]
+McpsIndication           0x801'307d   0x98  Code  Lc  LmHandler.o [1]
+MemManage_Handler        0x800'e3f1    0x2  Code  Gb  stm32wlxx_it.o [1]
+MlmeConfirm              0x801'3115   0x80  Code  Lc  LmHandler.o [1]
+MlmeIndication           0x801'3195   0x5a  Code  Lc  LmHandler.o [1]
+NMI_Handler              0x800'e3e3    0x2  Code  Gb  stm32wlxx_it.o [1]
+Nvm                     0x2000'0294  0x730  Data  Lc  LoRaMac.o [1]
+NvmDataMgmtEvent         0x801'3409    0x2  Code  Gb  NvmDataMgmt.o [1]
+NvmDataMgmtRestore       0x801'340f    0x4  Code  Gb  NvmDataMgmt.o [1]
+NvmDataMgmtStore         0x801'340b    0x4  Code  Gb  NvmDataMgmt.o [1]
+OffModeDisable          0x2000'24c8    0x4  Data  Lc  stm32_lpm.o [1]
+OnAckTimeoutTimerEvent   0x800'0de7   0x46  Code  Lc  LoRaMac.o [1]
+OnComplianceTxNextPacketTimerEvent
+                         0x801'36fd    0x2  Code  Lc  LmhpCompliance.o [1]
+OnJoinRequest            0x801'284d   0x68  Code  Lc  app.o [1]
+OnJoinTimerLedEvent      0x801'27b5    0xa  Code  Lc  app.o [1]
+OnMacProcessNotify       0x801'2939    0xc  Code  Lc  app.o [1]
+OnRadioRxDone            0x800'018d   0x42  Code  Lc  LoRaMac.o [1]
+OnRadioRxError           0x800'0221   0x20  Code  Lc  LoRaMac.o [1]
+OnRadioRxTimeout         0x800'0241   0x28  Code  Lc  LoRaMac.o [1]
+OnRadioTxDone            0x800'0139   0x44  Code  Lc  LoRaMac.o [1]
+OnRadioTxTimeout         0x800'01e9   0x28  Code  Lc  LoRaMac.o [1]
+OnRxData                 0x801'266d   0xa6  Code  Lc  app.o [1]
+OnRxData{1}{2}::slotStrings
+                        0x2000'0054   0x18  Data  Lc  app.o [1]
+OnRxTimerLedEvent        0x801'27a9    0xc  Code  Lc  app.o [1]
+OnRxWindow1TimerEvent    0x800'0d81   0x2a  Code  Lc  LoRaMac.o [1]
+OnRxWindow2TimerEvent    0x800'0dab   0x34  Code  Lc  LoRaMac.o [1]
+OnTxData                 0x801'27bf   0x8e  Code  Lc  app.o [1]
+OnTxDelayedTimerEvent    0x800'0d3d   0x44  Code  Lc  LoRaMac.o [1]
+OnTxTimerEvent           0x801'278d    0xe  Code  Lc  app.o [1]
+OnTxTimerLedEvent        0x801'279d    0xc  Code  Lc  app.o [1]
+OpenContinuousRxCWindow
+                         0x800'1911   0x4a  Code  Lc  LoRaMac.o [1]
+OperatingMode           0x2000'246c    0x1  Data  Lc  radio_driver.o [1]
+PWR_EnterOffMode         0x801'4061    0x2  Code  Gb  stm32_lpm_if.o [1]
+PWR_EnterSleepMode       0x801'408f   0x12  Code  Gb  stm32_lpm_if.o [1]
+PWR_EnterStopMode        0x801'4065   0x18  Code  Gb  stm32_lpm_if.o [1]
+PWR_ExitOffMode          0x801'4063    0x2  Code  Gb  stm32_lpm_if.o [1]
+PWR_ExitSleepMode        0x801'40a1    0x4  Code  Gb  stm32_lpm_if.o [1]
+PWR_ExitStopMode         0x801'4081    0xe  Code  Gb  stm32_lpm_if.o [1]
+PacketType              0x2000'2474    0x1  Data  Lc  radio_driver.o [1]
+PayloadEncrypt           0x800'3929   0xc4  Code  Lc  LoRaMacCrypto.o [1]
+PendSV_Handler           0x800'e3fb    0x2  Code  Gb  stm32wlxx_it.o [1]
+PrepareB0                0x800'39ed   0x42  Code  Lc  LoRaMacCrypto.o [1]
+PrepareRxDoneAbort       0x800'028d   0x32  Code  Lc  LoRaMac.o [1]
+PrintKey                 0x800'419d   0xe8  Code  Lc  soft-se.o [1]
+ProcessMacCommands       0x800'0f5d  0x4e4  Code  Lc  LoRaMac.o [1]
+RBI_ConfigRFSwitch       0x800'da09   0x48  Code  Gb  radio_board_if.o [1]
+RBI_GetTxConfig          0x800'da61    0x4  Code  Gb  radio_board_if.o [1]
+RBI_Init                 0x800'd999   0x58  Code  Gb  radio_board_if.o [1]
+RBI_IsDCDC               0x800'da69    0x4  Code  Gb  radio_board_if.o [1]
+RBI_IsTCXO               0x800'da65    0x4  Code  Gb  radio_board_if.o [1]
+RCC_SetFlashLatency::FLASH_CLK_SRC_RANGE_VOS1
+                         0x800'f88c    0x8  Data  Lc  stm32wlxx_hal_rcc.o [1]
+RCC_SetFlashLatency::FLASH_CLK_SRC_RANGE_VOS2
+                         0x800'f894    0x8  Data  Lc  stm32wlxx_hal_rcc.o [1]
+RCC_SetFlashLatency::FLASH_LATENCY_RANGE
+                         0x800'f89c    0xc  Data  Lc  stm32wlxx_hal_rcc.o [1]
+RCC_SetFlashLatencyFromMSIRange
+                         0x800'f7b9   0x92  Code  Lc  stm32wlxx_hal_rcc.o [1]
+RFW_DeInit               0x800'd937    0x2  Code  Gb  radio_fw.o [1]
+RFW_DeInit_TxLongPacket
+                         0x800'd947    0x2  Code  Gb  radio_fw.o [1]
+RFW_Init                 0x800'd935    0x2  Code  Gb  radio_fw.o [1]
+RFW_Is_Init              0x800'd939    0x4  Code  Gb  radio_fw.o [1]
+RFW_Is_LongPacketModeEnabled
+                         0x800'd93d    0x4  Code  Gb  radio_fw.o [1]
+RFW_ReceiveInit          0x800'd945    0x2  Code  Gb  radio_fw.o [1]
+RFW_ReceiveLongPacket    0x800'd92d    0x2  Code  Gb  radio_fw.o [1]
+RFW_ReceivePayload       0x800'd949    0x2  Code  Gb  radio_fw.o [1]
+RFW_SetAntSwitch         0x800'd941    0x2  Code  Gb  radio_fw.o [1]
+RFW_SetRadioModem        0x800'd94b    0x2  Code  Gb  radio_fw.o [1]
+RFW_TransmitInit         0x800'd943    0x2  Code  Gb  radio_fw.o [1]
+RFW_TransmitLongPacket   0x800'd929    0x2  Code  Gb  radio_fw.o [1]
+RTC_Alarm_IRQHandler     0x800'e487    0x6  Code  Gb  stm32wlxx_it.o [1]
+RTC_ByteToBcd2           0x800'ff29   0x16  Code  Gb  stm32wlxx_hal_rtc.o [1]
+RTC_EnterInitMode        0x800'fe87   0x40  Code  Gb  stm32wlxx_hal_rtc.o [1]
+RTC_ExitInitMode         0x800'fec7   0x4c  Code  Gb  stm32wlxx_hal_rtc.o [1]
+RTC_Initialized         0x2000'24cc    0x1  Data  Lc  timer_if.o [1]
+Radio                    0x801'3e70   0x84  Data  Gb  radio.o [1]
+RadioBuffer             0x2000'1938  0x100  Data  Lc  radio.o [1]
+RadioCheckRfFrequency    0x800'c205    0x4  Code  Lc  radio.o [1]
+RadioEvents             0x2000'1ed8    0x4  Data  Lc  radio.o [1]
+RadioGetStatus           0x800'bccb   0x24  Code  Lc  radio.o [1]
+RadioGetWakeupTime       0x800'c681    0xa  Code  Lc  radio.o [1]
+RadioInit                0x800'bc49   0x82  Code  Lc  radio.o [1]
+RadioIrqProcess          0x800'c84b  0x178  Code  Lc  radio.o [1]
+RadioIsChannelFree       0x800'bd35   0xf4  Code  Lc  radio.o [1]
+RadioOnDioIrq            0x800'c6b5  0x178  Code  Lc  radio.o [1]
+RadioOnDioIrqCb         0x2000'2470    0x4  Data  Lc  radio_driver.o [1]
+RadioOnRxTimeoutIrq      0x800'c6a1   0x12  Code  Lc  radio.o [1]
+RadioOnTxTimeoutIrq      0x800'c68d   0x12  Code  Lc  radio.o [1]
+RadioRandom              0x800'be37   0x1a  Code  Lc  radio.o [1]
+RadioRead                0x800'c619    0x4  Code  Lc  radio.o [1]
+RadioReadRegisters       0x800'c621    0x4  Code  Lc  radio.o [1]
+RadioRssi                0x800'c611    0x4  Code  Lc  radio.o [1]
+RadioRx                  0x800'c501   0x40  Code  Lc  radio.o [1]
+RadioRxBoosted           0x800'c54f   0x40  Code  Lc  radio.o [1]
+RadioSend                0x800'c32d  0x1b0  Code  Lc  radio.o [1]
+RadioSetChannel          0x800'bd31    0x4  Code  Lc  radio.o [1]
+RadioSetMaxPayloadLength
+                         0x800'c625   0x22  Code  Lc  radio.o [1]
+RadioSetModem            0x800'bcef   0x42  Code  Lc  radio.o [1]
+RadioSetPublicNetwork    0x800'c647   0x3a  Code  Lc  radio.o [1]
+RadioSetRxConfig         0x800'be51  0x234  Code  Lc  radio.o [1]
+RadioSetRxDutyCycle      0x800'c599   0x1c  Code  Lc  radio.o [1]
+RadioSetRxGenericConfig
+                         0x800'ca89  0x1ce  Code  Lc  radio.o [1]
+RadioSetTxConfig         0x800'c0b1  0x126  Code  Lc  radio.o [1]
+RadioSetTxContinuousWave
+                         0x800'c5db   0x36  Code  Lc  radio.o [1]
+RadioSetTxGenericConfig
+                         0x800'cc6f  0x1a4  Code  Lc  radio.o [1]
+RadioSleep               0x800'c4dd   0x10  Code  Lc  radio.o [1]
+RadioStandby             0x800'c4fb    0x6  Code  Lc  radio.o [1]
+RadioStartCad            0x800'c5b5   0x1c  Code  Lc  radio.o [1]
+RadioTimeOnAir           0x800'c209  0x11e  Code  Lc  radio.o [1]
+RadioTxCw                0x800'ca77   0x12  Code  Lc  radio.o [1]
+RadioTxPrbs              0x800'ca49   0x28  Code  Lc  radio.o [1]
+RadioWrite               0x800'c615    0x4  Code  Lc  radio.o [1]
+RadioWriteRegisters      0x800'c61d    0x4  Code  Lc  radio.o [1]
+Radio_SMPS_Set           0x800'd755   0x28  Code  Lc  radio_driver.o [1]
+Region$$Table$$Base      0x801'42f8          --   Gb  - Linker created -
+Region$$Table$$Limit     0x801'4318          --   Gb  - Linker created -
+RegionAS923AlternateDr   0x800'54a9    0x4  Code  Gb  RegionAS923.o [1]
+RegionAS923ApplyCFList   0x800'4fbd   0x7e  Code  Gb  RegionAS923.o [1]
+RegionAS923ApplyDrOffset
+                         0x800'56dd   0x22  Code  Gb  RegionAS923.o [1]
+RegionAS923ChanMaskSet   0x800'503b   0x30  Code  Gb  RegionAS923.o [1]
+RegionAS923ChannelAdd    0x800'5591   0xa0  Code  Gb  RegionAS923.o [1]
+RegionAS923ChannelsRemove
+                         0x800'563d   0x30  Code  Gb  RegionAS923.o [1]
+RegionAS923ComputeRxWindowParameters
+                         0x800'506b   0x5e  Code  Gb  RegionAS923.o [1]
+RegionAS923DlChannelReq
+                         0x800'5479   0x30  Code  Gb  RegionAS923.o [1]
+RegionAS923GetPhyParam   0x800'4d29  0x16e  Code  Gb  RegionAS923.o [1]
+RegionAS923InitDefaults
+                         0x800'4ecf   0x8e  Code  Gb  RegionAS923.o [1]
+RegionAS923LinkAdrReq    0x800'52a5  0x156  Code  Gb  RegionAS923.o [1]
+RegionAS923NewChannelReq
+                         0x800'5431   0x44  Code  Gb  RegionAS923.o [1]
+RegionAS923NextChannel   0x800'54ad   0xd4  Code  Gb  RegionAS923.o [1]
+RegionAS923RxConfig      0x800'50c9   0xe0  Code  Gb  RegionAS923.o [1]
+RegionAS923RxParamSetupReq
+                         0x800'53fb   0x36  Code  Gb  RegionAS923.o [1]
+RegionAS923SetBandTxDone
+                         0x800'4e9f   0x30  Code  Gb  RegionAS923.o [1]
+RegionAS923SetContinuousWave
+                         0x800'566d   0x3e  Code  Gb  RegionAS923.o [1]
+RegionAS923TxConfig      0x800'51a9   0xfc  Code  Gb  RegionAS923.o [1]
+RegionAS923TxParamSetupReq
+                         0x800'5475    0x4  Code  Gb  RegionAS923.o [1]
+RegionAS923Verify        0x800'4f5d   0x60  Code  Gb  RegionAS923.o [1]
+RegionAU915AlternateDr   0x800'5fdd   0x2a  Code  Gb  RegionAU915.o [1]
+RegionAU915ApplyCFList   0x800'5b0b   0x5e  Code  Gb  RegionAU915.o [1]
+RegionAU915ApplyDrOffset
+                         0x800'6183   0x20  Code  Gb  RegionAU915.o [1]
+RegionAU915ChanMaskSet   0x800'5b69   0x62  Code  Gb  RegionAU915.o [1]
+RegionAU915ComputeRxWindowParameters
+                         0x800'5bcb   0x52  Code  Gb  RegionAU915.o [1]
+RegionAU915DlChannelReq
+                         0x800'5fd5    0x2  Code  Gb  RegionAU915.o [1]
+RegionAU915GetPhyParam   0x800'5801  0x180  Code  Gb  RegionAU915.o [1]
+RegionAU915InitDefaults
+                         0x800'59b9   0xe4  Code  Gb  RegionAU915.o [1]
+RegionAU915LinkAdrReq    0x800'5d7f  0x206  Code  Gb  RegionAU915.o [1]
+RegionAU915NewChannelReq
+                         0x800'5fcd    0x2  Code  Gb  RegionAU915.o [1]
+RegionAU915NextChannel   0x800'6007  0x132  Code  Gb  RegionAU915.o [1]
+RegionAU915RxConfig      0x800'5c1d   0xaa  Code  Gb  RegionAU915.o [1]
+RegionAU915RxParamSetupReq
+                         0x800'5f85   0x48  Code  Gb  RegionAU915.o [1]
+RegionAU915SetBandTxDone
+                         0x800'5989   0x30  Code  Gb  RegionAU915.o [1]
+RegionAU915SetContinuousWave
+                         0x800'6139   0x34  Code  Gb  RegionAU915.o [1]
+RegionAU915TxConfig      0x800'5cc7   0xb8  Code  Gb  RegionAU915.o [1]
+RegionAU915TxParamSetupReq
+                         0x800'5fcf    0x4  Code  Gb  RegionAU915.o [1]
+RegionAU915Verify        0x800'5ab3   0x58  Code  Gb  RegionAU915.o [1]
+RegionAlternateDr        0x800'3549   0x50  Code  Gb  Region.o [1]
+RegionApplyCFList        0x800'31b9   0x4a  Code  Gb  Region.o [1]
+RegionApplyDrOffset      0x800'3665   0x88  Code  Gb  Region.o [1]
+RegionBaseUSCalcDownlinkFrequency
+                         0x800'b9db    0x6  Code  Gb  RegionBaseUS.o [1]
+RegionBaseUSComputeNext125kHzJoinChannel
+                         0x800'b951   0x8a  Code  Gb  RegionBaseUS.o [1]
+RegionCN470AlternateDr   0x800'68db    0x2  Code  Gb  RegionCN470.o [1]
+RegionCN470ApplyCFList   0x800'6513   0x3e  Code  Gb  RegionCN470.o [1]
+RegionCN470ApplyDrOffset
+                         0x800'6a2f    0xe  Code  Gb  RegionCN470.o [1]
+RegionCN470ChanMaskSet   0x800'6551   0x30  Code  Gb  RegionCN470.o [1]
+RegionCN470ComputeRxWindowParameters
+                         0x800'6581   0x52  Code  Gb  RegionCN470.o [1]
+RegionCN470DlChannelReq
+                         0x800'68d9    0x2  Code  Gb  RegionCN470.o [1]
+RegionCN470GetPhyParam   0x800'62d9  0x138  Code  Gb  RegionCN470.o [1]
+RegionCN470InitDefaults
+                         0x800'6449   0x90  Code  Gb  RegionCN470.o [1]
+RegionCN470LinkAdrReq    0x800'672f  0x168  Code  Gb  RegionCN470.o [1]
+RegionCN470NewChannelReq
+                         0x800'68cd    0x2  Code  Gb  RegionCN470.o [1]
+RegionCN470NextChannel   0x800'68dd   0xd0  Code  Gb  RegionCN470.o [1]
+RegionCN470RxConfig      0x800'65d3   0xa8  Code  Gb  RegionCN470.o [1]
+RegionCN470RxParamSetupReq
+                         0x800'6897   0x36  Code  Gb  RegionCN470.o [1]
+RegionCN470SetBandTxDone
+                         0x800'6419   0x30  Code  Gb  RegionCN470.o [1]
+RegionCN470SetContinuousWave
+                         0x800'69ad   0x34  Code  Gb  RegionCN470.o [1]
+RegionCN470TxConfig      0x800'667b   0xb4  Code  Gb  RegionCN470.o [1]
+RegionCN470TxParamSetupReq
+                         0x800'68d1    0x2  Code  Gb  RegionCN470.o [1]
+RegionCN470Verify        0x800'64d9   0x3a  Code  Gb  RegionCN470.o [1]
+RegionCN779AlternateDr   0x800'7255    0x2  Code  Gb  RegionCN779.o [1]
+RegionCN779ApplyCFList   0x800'6d65   0x7e  Code  Gb  RegionCN779.o [1]
+RegionCN779ApplyDrOffset
+                         0x800'7489    0xe  Code  Gb  RegionCN779.o [1]
+RegionCN779ChanMaskSet   0x800'6de3   0x30  Code  Gb  RegionCN779.o [1]
+RegionCN779ChannelAdd    0x800'733b   0xa0  Code  Gb  RegionCN779.o [1]
+RegionCN779ChannelsRemove
+                         0x800'73e7   0x30  Code  Gb  RegionCN779.o [1]
+RegionCN779ComputeRxWindowParameters
+                         0x800'6e13   0x5e  Code  Gb  RegionCN779.o [1]
+RegionCN779DlChannelReq
+                         0x800'7225   0x30  Code  Gb  RegionCN779.o [1]
+RegionCN779GetPhyParam   0x800'6b09  0x132  Code  Gb  RegionCN779.o [1]
+RegionCN779InitDefaults
+                         0x800'6c73   0xa4  Code  Gb  RegionCN779.o [1]
+RegionCN779LinkAdrReq    0x800'704d  0x158  Code  Gb  RegionCN779.o [1]
+RegionCN779NewChannelReq
+                         0x800'71db   0x44  Code  Gb  RegionCN779.o [1]
+RegionCN779NextChannel   0x800'7257   0xd4  Code  Gb  RegionCN779.o [1]
+RegionCN779RxConfig      0x800'6e71   0xe0  Code  Gb  RegionCN779.o [1]
+RegionCN779RxParamSetupReq
+                         0x800'71a5   0x36  Code  Gb  RegionCN779.o [1]
+RegionCN779SetBandTxDone
+                         0x800'6c43   0x30  Code  Gb  RegionCN779.o [1]
+RegionCN779SetContinuousWave
+                         0x800'7417   0x3e  Code  Gb  RegionCN779.o [1]
+RegionCN779TxConfig      0x800'6f51   0xfc  Code  Gb  RegionCN779.o [1]
+RegionCN779TxParamSetupReq
+                         0x800'721f    0x6  Code  Gb  RegionCN779.o [1]
+RegionCN779Verify        0x800'6d17   0x4e  Code  Gb  RegionCN779.o [1]
+RegionChanMaskSet        0x800'3205   0x4c  Code  Gb  Region.o [1]
+RegionCommonChanDisable
+                         0x800'b2dd   0x34  Code  Gb  RegionCommon.o [1]
+RegionCommonChanMaskCopy
+                         0x800'b349   0x1e  Code  Gb  RegionCommon.o [1]
+RegionCommonChanVerifyDr
+                         0x800'b263   0x6a  Code  Gb  RegionCommon.o [1]
+RegionCommonComputeRxWindowParameters
+                         0x800'b649   0x4c  Code  Gb  RegionCommon.o [1]
+RegionCommonComputeSymbolTimeFsk
+                         0x800'b63f    0xa  Code  Gb  RegionCommon.o [1]
+RegionCommonComputeSymbolTimeLoRa
+                         0x800'b62f   0x10  Code  Gb  RegionCommon.o [1]
+RegionCommonComputeTxPower
+                         0x800'b695   0x2a  Code  Gb  RegionCommon.o [1]
+RegionCommonCountChannels
+                         0x800'b311   0x38  Code  Gb  RegionCommon.o [1]
+RegionCommonCountNbOfEnabledChannels
+                         0x800'b6c1   0xba  Code  Gb  RegionCommon.o [1]
+RegionCommonGetBandwidth
+                         0x800'b843   0x1c  Code  Gb  RegionCommon.o [1]
+RegionCommonGetNextLowerTxDr
+                         0x800'b803   0x38  Code  Gb  RegionCommon.o [1]
+RegionCommonIdentifyChannels
+                         0x800'b77b   0x88  Code  Gb  RegionCommon.o [1]
+RegionCommonLimitTxPower
+                         0x800'b83b    0x8  Code  Gb  RegionCommon.o [1]
+RegionCommonLinkAdrReqVerifyParams
+                         0x800'b5b5   0x7a  Code  Gb  RegionCommon.o [1]
+RegionCommonParseLinkAdrReq
+                         0x800'b573   0x42  Code  Gb  RegionCommon.o [1]
+RegionCommonRxConfigPrint
+                         0x800'b885   0x38  Code  Gb  RegionCommon.o [1]
+RegionCommonSetBandTxDone
+                         0x800'b367   0x26  Code  Gb  RegionCommon.o [1]
+RegionCommonTxConfigPrint
+                         0x800'b8c5   0x14  Code  Gb  RegionCommon.o [1]
+RegionCommonUpdateBandTimeOff
+                         0x800'b38d  0x1e6  Code  Gb  RegionCommon.o [1]
+RegionCommonValueInRange
+                         0x800'b2cd   0x10  Code  Gb  RegionCommon.o [1]
+RegionComputeRxWindowParameters
+                         0x800'3251   0x72  Code  Gb  Region.o [1]
+RegionDlChannelReq       0x800'34fd   0x4c  Code  Gb  Region.o [1]
+RegionEU433AlternateDr   0x800'7cd5    0x2  Code  Gb  RegionEU433.o [1]
+RegionEU433ApplyCFList   0x800'77e5   0x7e  Code  Gb  RegionEU433.o [1]
+RegionEU433ApplyDrOffset
+                         0x800'7f05    0xe  Code  Gb  RegionEU433.o [1]
+RegionEU433ChanMaskSet   0x800'7863   0x30  Code  Gb  RegionEU433.o [1]
+RegionEU433ChannelAdd    0x800'7dbb   0xa0  Code  Gb  RegionEU433.o [1]
+RegionEU433ChannelsRemove
+                         0x800'7e67   0x30  Code  Gb  RegionEU433.o [1]
+RegionEU433ComputeRxWindowParameters
+                         0x800'7893   0x5e  Code  Gb  RegionEU433.o [1]
+RegionEU433DlChannelReq
+                         0x800'7ca5   0x30  Code  Gb  RegionEU433.o [1]
+RegionEU433GetPhyParam   0x800'7591  0x12a  Code  Gb  RegionEU433.o [1]
+RegionEU433InitDefaults
+                         0x800'76f3   0xa4  Code  Gb  RegionEU433.o [1]
+RegionEU433LinkAdrReq    0x800'7acd  0x158  Code  Gb  RegionEU433.o [1]
+RegionEU433NewChannelReq
+                         0x800'7c5b   0x44  Code  Gb  RegionEU433.o [1]
+RegionEU433NextChannel   0x800'7cd7   0xd4  Code  Gb  RegionEU433.o [1]
+RegionEU433RxConfig      0x800'78f1   0xe0  Code  Gb  RegionEU433.o [1]
+RegionEU433RxParamSetupReq
+                         0x800'7c25   0x36  Code  Gb  RegionEU433.o [1]
+RegionEU433SetBandTxDone
+                         0x800'76c3   0x30  Code  Gb  RegionEU433.o [1]
+RegionEU433SetContinuousWave
+                         0x800'7e97   0x3e  Code  Gb  RegionEU433.o [1]
+RegionEU433TxConfig      0x800'79d1   0xfc  Code  Gb  RegionEU433.o [1]
+RegionEU433TxParamSetupReq
+                         0x800'7c9f    0x6  Code  Gb  RegionEU433.o [1]
+RegionEU433Verify        0x800'7797   0x4e  Code  Gb  RegionEU433.o [1]
+RegionEU868AlternateDr   0x800'87c3    0x2  Code  Gb  RegionEU868.o [1]
+RegionEU868ApplyCFList   0x800'82cd   0x7e  Code  Gb  RegionEU868.o [1]
+RegionEU868ApplyDrOffset
+                         0x800'8a25    0xe  Code  Gb  RegionEU868.o [1]
+RegionEU868ChanMaskSet   0x800'834b   0x30  Code  Gb  RegionEU868.o [1]
+RegionEU868ChannelAdd    0x800'88a9   0xaa  Code  Gb  RegionEU868.o [1]
+RegionEU868ChannelsRemove
+                         0x800'895f   0x30  Code  Gb  RegionEU868.o [1]
+RegionEU868ComputeRxWindowParameters
+                         0x800'837b   0x5e  Code  Gb  RegionEU868.o [1]
+RegionEU868DlChannelReq
+                         0x800'8787   0x2c  Code  Gb  RegionEU868.o [1]
+RegionEU868GetPhyParam   0x800'8071  0x12a  Code  Gb  RegionEU868.o [1]
+RegionEU868InitDefaults
+                         0x800'81d3   0xa4  Code  Gb  RegionEU868.o [1]
+RegionEU868LinkAdrReq    0x800'85b5  0x156  Code  Gb  RegionEU868.o [1]
+RegionEU868NewChannelReq
+                         0x800'873d   0x44  Code  Gb  RegionEU868.o [1]
+RegionEU868NextChannel   0x800'87c5   0xd4  Code  Gb  RegionEU868.o [1]
+RegionEU868RxConfig      0x800'83d9   0xe0  Code  Gb  RegionEU868.o [1]
+RegionEU868RxParamSetupReq
+                         0x800'870b   0x32  Code  Gb  RegionEU868.o [1]
+RegionEU868SetBandTxDone
+                         0x800'81a3   0x30  Code  Gb  RegionEU868.o [1]
+RegionEU868SetContinuousWave
+                         0x800'898f   0x3e  Code  Gb  RegionEU868.o [1]
+RegionEU868TxConfig      0x800'84b9   0xfc  Code  Gb  RegionEU868.o [1]
+RegionEU868TxParamSetupReq
+                         0x800'8781    0x6  Code  Gb  RegionEU868.o [1]
+RegionEU868Verify        0x800'8277   0x56  Code  Gb  RegionEU868.o [1]
+RegionGetPhyParam        0x800'307d   0x52  Code  Gb  Region.o [1]
+RegionGetVersion         0x800'36ed    0x4  Code  Gb  Region.o [1]
+RegionIN865AlternateDr   0x800'9263    0x2  Code  Gb  RegionIN865.o [1]
+RegionIN865ApplyCFList   0x800'8d5d   0x7e  Code  Gb  RegionIN865.o [1]
+RegionIN865ApplyDrOffset
+                         0x800'9495   0x18  Code  Gb  RegionIN865.o [1]
+RegionIN865ChanMaskSet   0x800'8ddb   0x30  Code  Gb  RegionIN865.o [1]
+RegionIN865ChannelAdd    0x800'9349   0xa0  Code  Gb  RegionIN865.o [1]
+RegionIN865ChannelsRemove
+                         0x800'93f5   0x30  Code  Gb  RegionIN865.o [1]
+RegionIN865ComputeRxWindowParameters
+                         0x800'8e0b   0x5e  Code  Gb  RegionIN865.o [1]
+RegionIN865DlChannelReq
+                         0x800'9233   0x30  Code  Gb  RegionIN865.o [1]
+RegionIN865GetPhyParam   0x800'8b15  0x124  Code  Gb  RegionIN865.o [1]
+RegionIN865InitDefaults
+                         0x800'8c71   0xa4  Code  Gb  RegionIN865.o [1]
+RegionIN865LinkAdrReq    0x800'9045  0x166  Code  Gb  RegionIN865.o [1]
+RegionIN865NewChannelReq
+                         0x800'91e9   0x44  Code  Gb  RegionIN865.o [1]
+RegionIN865NextChannel   0x800'9265   0xd4  Code  Gb  RegionIN865.o [1]
+RegionIN865RxConfig      0x800'8e69   0xe0  Code  Gb  RegionIN865.o [1]
+RegionIN865RxParamSetupReq
+                         0x800'91ab   0x3e  Code  Gb  RegionIN865.o [1]
+RegionIN865SetBandTxDone
+                         0x800'8c41   0x30  Code  Gb  RegionIN865.o [1]
+RegionIN865SetContinuousWave
+                         0x800'9425   0x3e  Code  Gb  RegionIN865.o [1]
+RegionIN865TxConfig      0x800'8f49   0xfc  Code  Gb  RegionIN865.o [1]
+RegionIN865TxParamSetupReq
+                         0x800'922d    0x6  Code  Gb  RegionIN865.o [1]
+RegionIN865Verify        0x800'8d15   0x48  Code  Gb  RegionIN865.o [1]
+RegionInitDefaults       0x800'311d   0x4a  Code  Gb  Region.o [1]
+RegionIsActive           0x800'3069   0x12  Code  Gb  Region.o [1]
+RegionLinkAdrReq         0x800'339d   0x7c  Code  Gb  Region.o [1]
+RegionNewChannelReq      0x800'3465   0x4c  Code  Gb  Region.o [1]
+RegionNextChannel        0x800'3599   0x74  Code  Gb  Region.o [1]
+RegionNvmGroup1         0x2000'247c    0x4  Data  Lc  RegionAS923.o [1]
+RegionNvmGroup1         0x2000'2484    0x4  Data  Lc  RegionAU915.o [1]
+RegionNvmGroup1         0x2000'248c    0x4  Data  Lc  RegionCN470.o [1]
+RegionNvmGroup1         0x2000'2494    0x4  Data  Lc  RegionCN779.o [1]
+RegionNvmGroup1         0x2000'249c    0x4  Data  Lc  RegionEU433.o [1]
+RegionNvmGroup1         0x2000'24a4    0x4  Data  Lc  RegionEU868.o [1]
+RegionNvmGroup1         0x2000'24ac    0x4  Data  Lc  RegionIN865.o [1]
+RegionNvmGroup1         0x2000'24b4    0x4  Data  Lc  RegionRU864.o [1]
+RegionNvmGroup1         0x2000'24bc    0x4  Data  Lc  RegionUS915.o [1]
+RegionNvmGroup2         0x2000'2480    0x4  Data  Lc  RegionAS923.o [1]
+RegionNvmGroup2         0x2000'2488    0x4  Data  Lc  RegionAU915.o [1]
+RegionNvmGroup2         0x2000'2490    0x4  Data  Lc  RegionCN470.o [1]
+RegionNvmGroup2         0x2000'2498    0x4  Data  Lc  RegionCN779.o [1]
+RegionNvmGroup2         0x2000'24a0    0x4  Data  Lc  RegionEU433.o [1]
+RegionNvmGroup2         0x2000'24a8    0x4  Data  Lc  RegionEU868.o [1]
+RegionNvmGroup2         0x2000'24b0    0x4  Data  Lc  RegionIN865.o [1]
+RegionNvmGroup2         0x2000'24b8    0x4  Data  Lc  RegionRU864.o [1]
+RegionNvmGroup2         0x2000'24c0    0x4  Data  Lc  RegionUS915.o [1]
+RegionRU864AlternateDr   0x800'a7ab    0x2  Code  Gb  RegionRU864.o [1]
+RegionRU864ApplyCFList   0x800'a2bd   0x7e  Code  Gb  RegionRU864.o [1]
+RegionRU864ApplyDrOffset
+                         0x800'a9d5    0xe  Code  Gb  RegionRU864.o [1]
+RegionRU864ChanMaskSet   0x800'a33b   0x30  Code  Gb  RegionRU864.o [1]
+RegionRU864ChannelAdd    0x800'a88b   0xa0  Code  Gb  RegionRU864.o [1]
+RegionRU864ChannelsRemove
+                         0x800'a937   0x30  Code  Gb  RegionRU864.o [1]
+RegionRU864ComputeRxWindowParameters
+                         0x800'a36b   0x5e  Code  Gb  RegionRU864.o [1]
+RegionRU864DlChannelReq
+                         0x800'a77b   0x30  Code  Gb  RegionRU864.o [1]
+RegionRU864GetPhyParam   0x800'a079  0x130  Code  Gb  RegionRU864.o [1]
+RegionRU864InitDefaults
+                         0x800'a1e1   0x8e  Code  Gb  RegionRU864.o [1]
+RegionRU864LinkAdrReq    0x800'a5a5  0x156  Code  Gb  RegionRU864.o [1]
+RegionRU864NewChannelReq
+                         0x800'a731   0x44  Code  Gb  RegionRU864.o [1]
+RegionRU864NextChannel   0x800'a7ad   0xce  Code  Gb  RegionRU864.o [1]
+RegionRU864RxConfig      0x800'a3c9   0xe0  Code  Gb  RegionRU864.o [1]
+RegionRU864RxParamSetupReq
+                         0x800'a6fb   0x36  Code  Gb  RegionRU864.o [1]
+RegionRU864SetBandTxDone
+                         0x800'a1b1   0x30  Code  Gb  RegionRU864.o [1]
+RegionRU864SetContinuousWave
+                         0x800'a967   0x3e  Code  Gb  RegionRU864.o [1]
+RegionRU864TxConfig      0x800'a4a9   0xfc  Code  Gb  RegionRU864.o [1]
+RegionRU864TxParamSetupReq
+                         0x800'a775    0x6  Code  Gb  RegionRU864.o [1]
+RegionRU864Verify        0x800'a26f   0x4e  Code  Gb  RegionRU864.o [1]
+RegionRxConfig           0x800'32c5   0x50  Code  Gb  Region.o [1]
+RegionRxParamSetupReq    0x800'3419   0x4c  Code  Gb  Region.o [1]
+RegionSetBandTxDone      0x800'30d1   0x4a  Code  Gb  Region.o [1]
+RegionSetContinuousWave
+                         0x800'3619   0x4a  Code  Gb  Region.o [1]
+RegionSwitchSelection   0x2000'0291    0x1  Data  Gb  appinit.o [1]
+RegionTxConfig           0x800'3315   0x88  Code  Gb  Region.o [1]
+RegionTxParamSetupReq    0x800'34b1   0x4c  Code  Gb  Region.o [1]
+RegionUS915AlternateDr   0x800'9d93   0x2a  Code  Gb  RegionUS915.o [1]
+RegionUS915ApplyCFList   0x800'9887   0x5e  Code  Gb  RegionUS915.o [1]
+RegionUS915ApplyDrOffset
+                         0x800'9f85   0x12  Code  Gb  RegionUS915.o [1]
+RegionUS915ChanMaskSet   0x800'98e5   0x6e  Code  Gb  RegionUS915.o [1]
+RegionUS915ComputeRxWindowParameters
+                         0x800'995d   0x52  Code  Gb  RegionUS915.o [1]
+RegionUS915DlChannelReq
+                         0x800'9d91    0x2  Code  Gb  RegionUS915.o [1]
+RegionUS915GetPhyParam   0x800'95e9  0x132  Code  Gb  RegionUS915.o [1]
+RegionUS915InitDefaults
+                         0x800'9753   0xde  Code  Gb  RegionUS915.o [1]
+RegionUS915LinkAdrReq    0x800'9b2b  0x206  Code  Gb  RegionUS915.o [1]
+RegionUS915NewChannelReq
+                         0x800'9d85    0x2  Code  Gb  RegionUS915.o [1]
+RegionUS915NextChannel   0x800'9dbd  0x130  Code  Gb  RegionUS915.o [1]
+RegionUS915RxConfig      0x800'99af   0xaa  Code  Gb  RegionUS915.o [1]
+RegionUS915RxParamSetupReq
+                         0x800'9d31   0x54  Code  Gb  RegionUS915.o [1]
+RegionUS915SetBandTxDone
+                         0x800'9723   0x30  Code  Gb  RegionUS915.o [1]
+RegionUS915SetContinuousWave
+                         0x800'9eed   0x4c  Code  Gb  RegionUS915.o [1]
+RegionUS915TxConfig      0x800'9a59   0xd2  Code  Gb  RegionUS915.o [1]
+RegionUS915TxParamSetupReq
+                         0x800'9d89    0x2  Code  Gb  RegionUS915.o [1]
+RegionUS915Verify        0x800'9847   0x40  Code  Gb  RegionUS915.o [1]
+RegionVerify             0x800'3169   0x50  Code  Gb  Region.o [1]
+ResetMacParameters       0x800'17a7  0x134  Code  Lc  LoRaMac.o [1]
+RtcTimerContext         0x2000'24d0    0x4  Data  Lc  timer_if.o [1]
+RxDoneParams            0x2000'2418   0x10  Data  Gb  LoRaMac.o [1]
+RxLedTimer              0x2000'23cc   0x18  Data  Lc  app.o [1]
+RxParams                0x2000'01d8   0x10  Data  Lc  LmHandler.o [1]
+RxTimeoutTimer          0x2000'1ef4   0x18  Data  Gb  radio.o [1]
+RxWindowSetup            0x800'18db   0x36  Code  Lc  LoRaMac.o [1]
+SEQ_BitPosition          0x801'2a51   0x32  Code  Gb  stm32_seq.o [1]
+SEQ_clz_table_4bit       0x801'2a84   0x10  Data  Lc  stm32_seq.o [1]
+SPI1_IRQHandler          0x800'e43b    0x6  Code  Gb  stm32wlxx_it.o [1]
+SPI_DMAAbortOnError      0x801'0b79   0x10  Code  Lc  stm32wlxx_hal_spi.o [1]
+SUBGHZSPI_Init           0x800'df01   0x20  Code  Gb  stm32wlxx_hal_subghz.o [1]
+SUBGHZSPI_Receive        0x800'df69   0x4a  Code  Gb  stm32wlxx_hal_subghz.o [1]
+SUBGHZSPI_Transmit       0x800'df21   0x48  Code  Gb  stm32wlxx_hal_subghz.o [1]
+SUBGHZ_CheckDeviceReady
+                         0x800'dfd1   0x34  Code  Gb  stm32wlxx_hal_subghz.o [1]
+SUBGHZ_Radio_IRQHandler
+                         0x800'e48d    0x6  Code  Gb  stm32wlxx_it.o [1]
+SUBGHZ_WaitOnBusy        0x800'e005   0x42  Code  Gb  stm32wlxx_hal_subghz.o [1]
+SUBGRF_Calibrate         0x800'd1c7   0x1c  Code  Gb  radio_driver.o [1]
+SUBGRF_CalibrateImage    0x800'd1e3   0x64  Code  Gb  radio_driver.o [1]
+SUBGRF_GetCFO            0x800'd7a9   0x70  Code  Gb  radio_driver.o [1]
+SUBGRF_GetFskBandwidthRegValue
+                         0x800'd77d   0x28  Code  Gb  radio_driver.o [1]
+SUBGRF_GetOperatingMode
+                         0x800'cf1d    0x8  Code  Gb  radio_driver.o [1]
+SUBGRF_GetPacketStatus   0x800'd5bb   0x70  Code  Gb  radio_driver.o [1]
+SUBGRF_GetPayload        0x800'cf25   0x2e  Code  Gb  radio_driver.o [1]
+SUBGRF_GetRadioWakeUpTime
+                         0x800'd6f9    0x4  Code  Gb  radio_driver.o [1]
+SUBGRF_GetRandom         0x800'cfef   0x60  Code  Gb  radio_driver.o [1]
+SUBGRF_GetRssiInst       0x800'd56d   0x18  Code  Gb  radio_driver.o [1]
+SUBGRF_GetRxBufferStatus
+                         0x800'd585   0x36  Code  Gb  radio_driver.o [1]
+SUBGRF_Init              0x800'cec1   0x5c  Code  Gb  radio_driver.o [1]
+SUBGRF_ReadBuffer        0x800'd679    0xc  Code  Gb  radio_driver.o [1]
+SUBGRF_ReadCommand       0x800'd6a1    0xc  Code  Lc  radio_driver.o [1]
+SUBGRF_ReadRegister      0x800'd637   0x10  Code  Gb  radio_driver.o [1]
+SUBGRF_ReadRegisters     0x800'd65d    0xa  Code  Gb  radio_driver.o [1]
+SUBGRF_SendPayload       0x800'cf53   0x16  Code  Gb  radio_driver.o [1]
+SUBGRF_SetBufferBaseAddress
+                         0x800'd55b   0x12  Code  Gb  radio_driver.o [1]
+SUBGRF_SetCad            0x800'd141   0x16  Code  Gb  radio_driver.o [1]
+SUBGRF_SetCrcPolynomial
+                         0x800'cf91   0x16  Code  Gb  radio_driver.o [1]
+SUBGRF_SetCrcSeed        0x800'cf7b   0x16  Code  Gb  radio_driver.o [1]
+SUBGRF_SetDioIrqParams   0x800'd25d   0x36  Code  Gb  radio_driver.o [1]
+SUBGRF_SetLoRaSymbNumTimeout
+                         0x800'd171   0x34  Code  Gb  radio_driver.o [1]
+SUBGRF_SetModulationParams
+                         0x800'd3b1   0xb0  Code  Gb  radio_driver.o [1]
+SUBGRF_SetPaConfig       0x800'd247   0x16  Code  Gb  radio_driver.o [1]
+SUBGRF_SetPacketParams   0x800'd489   0xd2  Code  Gb  radio_driver.o [1]
+SUBGRF_SetPacketType     0x800'd301   0x20  Code  Gb  radio_driver.o [1]
+SUBGRF_SetRegulatorMode
+                         0x800'd1a5   0x1c  Code  Gb  radio_driver.o [1]
+SUBGRF_SetRfFrequency    0x800'd2b5   0x42  Code  Gb  radio_driver.o [1]
+SUBGRF_SetRfTxPower      0x800'd6d3   0x26  Code  Gb  radio_driver.o [1]
+SUBGRF_SetRx             0x800'd0b7   0x12  Code  Gb  radio_driver.o [1]
+SUBGRF_SetRxBoosted      0x800'd0d9   0x26  Code  Gb  radio_driver.o [1]
+SUBGRF_SetRxDutyCycle    0x800'd10b   0x36  Code  Gb  radio_driver.o [1]
+SUBGRF_SetSleep          0x800'd04f   0x30  Code  Gb  radio_driver.o [1]
+SUBGRF_SetStandby        0x800'd07f   0x20  Code  Gb  radio_driver.o [1]
+SUBGRF_SetStopRxTimerOnPreambleDetect
+                         0x800'd167    0xa  Code  Gb  radio_driver.o [1]
+SUBGRF_SetSwitch         0x800'd6ad   0x26  Code  Gb  radio_driver.o [1]
+SUBGRF_SetSyncWord       0x800'cf69   0x12  Code  Gb  radio_driver.o [1]
+SUBGRF_SetTcxoMode       0x800'd293   0x22  Code  Gb  radio_driver.o [1]
+SUBGRF_SetTx             0x800'd09f   0x18  Code  Gb  radio_driver.o [1]
+SUBGRF_SetTxContinuousWave
+                         0x800'd157    0x8  Code  Gb  radio_driver.o [1]
+SUBGRF_SetTxInfinitePreamble
+                         0x800'd15f    0x8  Code  Gb  radio_driver.o [1]
+SUBGRF_SetTxParams       0x800'd321   0x8e  Code  Gb  radio_driver.o [1]
+SUBGRF_SetWhiteningSeed
+                         0x800'cfb9   0x36  Code  Gb  radio_driver.o [1]
+SUBGRF_WriteBuffer       0x800'd66d    0xc  Code  Gb  radio_driver.o [1]
+SUBGRF_WriteCommand      0x800'd695    0xc  Code  Lc  radio_driver.o [1]
+SUBGRF_WriteRegister     0x800'd62b    0xc  Code  Gb  radio_driver.o [1]
+SUBGRF_WriteRegisters    0x800'd651    0xc  Code  Gb  radio_driver.o [1]
+SVC_Handler              0x800'e3f7    0x2  Code  Gb  stm32wlxx_it.o [1]
+SYS_GetBatteryLevel      0x800'e0c3   0x28  Code  Gb  adc_if.o [1]
+SYS_GetTemperatureLevel
+                         0x800'e071   0x52  Code  Gb  adc_if.o [1]
+SYS_InitMeasurement      0x800'e069    0x8  Code  Gb  adc_if.o [1]
+ScheduleTx               0x800'14b3  0x2f4  Code  Lc  LoRaMac.o [1]
+SeNvm                   0x2000'24ec    0x4  Data  Lc  soft-se.o [1]
+SecureElementAesEncrypt
+                         0x800'444b   0x6e  Code  Gb  soft-se.o [1]
+SecureElementComputeAesCmac
+                         0x800'440d   0x14  Code  Gb  soft-se.o [1]
+SecureElementDeriveAndStoreKey
+                         0x800'44b9   0x46  Code  Gb  soft-se.o [1]
+SecureElementGetDevEui   0x800'4599    0x6  Code  Gb  soft-se.o [1]
+SecureElementGetJoinEui
+                         0x800'45bb    0xa  Code  Gb  soft-se.o [1]
+SecureElementGetKeyByID
+                         0x800'436f   0x16  Code  Gb  soft-se.o [1]
+SecureElementInit        0x800'4313   0x52  Code  Gb  soft-se.o [1]
+SecureElementProcessJoinAccept
+                         0x800'44ff   0x72  Code  Gb  soft-se.o [1]
+SecureElementRandomNumber
+                         0x800'4571   0x16  Code  Gb  soft-se.o [1]
+SecureElementSetDevEui   0x800'4587   0x12  Code  Gb  soft-se.o [1]
+SecureElementSetJoinEui
+                         0x800'459f   0x14  Code  Gb  soft-se.o [1]
+SecureElementSetKey      0x800'43a1   0x6c  Code  Gb  soft-se.o [1]
+SecureElementVerifyAesCmac
+                         0x800'4421   0x2a  Code  Gb  soft-se.o [1]
+SendTxData               0x801'2715   0x78  Code  Lc  app.o [1]
+SetMlmeScheduleUplinkIndication
+                         0x800'0f39   0x12  Code  Lc  LoRaMac.o [1]
+StopModeDisable         0x2000'24c4    0x4  Data  Lc  stm32_lpm.o [1]
+StopRetransmission       0x800'195b   0x42  Code  Lc  LoRaMac.o [1]
+SubgRf                  0x2000'1e80   0x58  Data  Gb  radio.o [1]
+SuperMask               0x2000'026c    0x4  Data  Lc  stm32_seq.o [1]
+SwitchClass              0x800'0e35   0xd0  Code  Lc  LoRaMac.o [1]
+SysTick_Handler          0x800'e3fd    0x2  Code  Gb  stm32wlxx_it.o [1]
+SysTimeAdd               0x800'29fd   0x3e  Code  Gb  stm32_systime.o [1]
+SysTimeFromMs            0x800'2b53   0x40  Code  Gb  stm32_systime.o [1]
+SysTimeGet               0x800'2abd   0x32  Code  Gb  stm32_systime.o [1]
+SysTimeGetMcuTime        0x800'2af1   0x22  Code  Gb  stm32_systime.o [1]
+SysTimeSet               0x800'2a85   0x36  Code  Gb  stm32_systime.o [1]
+SysTimeSub               0x800'2a3b   0x3a  Code  Gb  stm32_systime.o [1]
+SysTimeToMs              0x800'2b13   0x30  Code  Gb  stm32_systime.o [1]
+SystemApp_Init           0x800'd84d    0x4  Code  Gb  sys_app.o [1]
+SystemClock_Config       0x801'2237   0xa0  Code  Gb  main.o [1]
+SystemCoreClock         0x2000'0288    0x4  Data  Gb  system_stm32wlxx.o [1]
+SystemInit               0x801'4621    0x2  Code  Gb  system_stm32wlxx.o [1]
+TAMP_STAMP_LSECSS_SSRU_IRQHandler
+                         0x800'e3ff    0x6  Code  Gb  stm32wlxx_it.o [1]
+TIMER_IF_BkUp_Read_MSBticks
+                         0x800'e3b3    0x4  Code  Lc  timer_if.o [1]
+TIMER_IF_BkUp_Read_Seconds
+                         0x800'e38f    0x4  Code  Gb  timer_if.o [1]
+TIMER_IF_BkUp_Read_SubSeconds
+                         0x800'e393    0x2  Code  Gb  timer_if.o [1]
+TIMER_IF_BkUp_Write_MSBticks
+                         0x800'e3ad    0x6  Code  Lc  timer_if.o [1]
+TIMER_IF_BkUp_Write_Seconds
+                         0x800'e37f    0x6  Code  Gb  timer_if.o [1]
+TIMER_IF_BkUp_Write_SubSeconds
+                         0x800'e385    0x4  Code  Gb  timer_if.o [1]
+TIMER_IF_Convert_Tick2ms
+                         0x800'e305   0x10  Code  Gb  timer_if.o [1]
+TIMER_IF_Convert_ms2Tick
+                         0x800'e2f7    0xe  Code  Gb  timer_if.o [1]
+TIMER_IF_DelayMs         0x800'e315   0x2a  Code  Gb  timer_if.o [1]
+TIMER_IF_GetMinimumTimeout
+                         0x800'e2f3    0x4  Code  Gb  timer_if.o [1]
+TIMER_IF_GetTime         0x800'e351   0x2e  Code  Gb  timer_if.o [1]
+TIMER_IF_GetTimerContext
+                         0x800'e2c5    0x6  Code  Gb  timer_if.o [1]
+TIMER_IF_GetTimerElapsedTime
+                         0x800'e2cb   0x12  Code  Gb  timer_if.o [1]
+TIMER_IF_GetTimerValue   0x800'e2dd   0x16  Code  Gb  timer_if.o [1]
+TIMER_IF_Init            0x800'e20d   0x40  Code  Gb  timer_if.o [1]
+TIMER_IF_SetTimerContext
+                         0x800'e2b5   0x10  Code  Gb  timer_if.o [1]
+TIMER_IF_StartTimer      0x800'e24d   0x4a  Code  Gb  timer_if.o [1]
+TIMER_IF_StopTimer       0x800'e297   0x1e  Code  Gb  timer_if.o [1]
+TRACE_AllocateBufer      0x800'2dbd   0x58  Code  Lc  stm32_adv_trace.o [1]
+TRACE_Lock               0x800'2e15   0x10  Code  Lc  stm32_adv_trace.o [1]
+TRACE_Send               0x800'2cc9   0x70  Code  Lc  stm32_adv_trace.o [1]
+TRACE_TxCpltCallback     0x800'2d3d   0x80  Code  Lc  stm32_adv_trace.o [1]
+TRACE_UnLock             0x800'2e25    0xe  Code  Lc  stm32_adv_trace.o [1]
+TaskCb                  0x2000'1f0c   0x80  Data  Lc  stm32_seq.o [1]
+TaskMask                0x2000'0268    0x4  Data  Lc  stm32_seq.o [1]
+TaskPrio                0x2000'0254   0x10  Data  Lc  stm32_seq.o [1]
+TaskSet                 0x2000'0264    0x4  Data  Lc  stm32_seq.o [1]
+TimerExists              0x800'2979   0x16  Code  Gb  stm32_timer.o [1]
+TimerInsertNewHeadTimer
+                         0x800'29e1   0x10  Code  Gb  stm32_timer.o [1]
+TimerInsertTimer         0x800'29bb   0x26  Code  Gb  stm32_timer.o [1]
+TimerListHead           0x2000'24f0    0x4  Data  Lc  stm32_timer.o [1]
+TimerSetTimeout          0x800'298f   0x2c  Code  Gb  stm32_timer.o [1]
+TimestampNow             0x800'4c65   0x2a  Code  Lc  util_if.o [1]
+TxCpltCallback_LPUART1  0x2000'24e0    0x4  Data  Lc  main.o [1]
+TxCpltCallback_USART1   0x2000'24d8    0x4  Data  Lc  main.o [1]
+TxCpltCallback_USART2   0x2000'24dc    0x4  Data  Lc  main.o [1]
+TxDoneParams            0x2000'2428    0x4  Data  Gb  LoRaMac.o [1]
+TxLedTimer              0x2000'23b4   0x18  Data  Lc  app.o [1]
+TxParams                0x2000'23fc   0x18  Data  Lc  LmHandler.o [1]
+TxTimeoutTimer          0x2000'1edc   0x18  Data  Gb  radio.o [1]
+TxTimer                 0x2000'239c   0x18  Data  Lc  app.o [1]
+UARTEx_SetNbDataToProcess
+                         0x801'2b3d   0x3e  Code  Lc  stm32wlxx_hal_uart_ex.o [1]
+UARTEx_SetNbDataToProcess::denominator
+                         0x801'2b84    0x8  Data  Lc  stm32wlxx_hal_uart_ex.o [1]
+UARTEx_SetNbDataToProcess::numerator
+                         0x801'2b7c    0x8  Data  Lc  stm32wlxx_hal_uart_ex.o [1]
+UARTPrescTable           0x801'170c   0x18  Data  Gb  stm32wlxx_hal_uart.o [1]
+UART_AdvFeatureConfig    0x801'1399   0xc6  Code  Gb  stm32wlxx_hal_uart.o [1]
+UART_CheckIdleState      0x801'145f   0x5c  Code  Gb  stm32wlxx_hal_uart.o [1]
+UART_DMAAbortOnError     0x801'16f9   0x12  Code  Lc  stm32wlxx_hal_uart.o [1]
+UART_EndRxTransfer       0x801'1677   0x22  Code  Lc  stm32wlxx_hal_uart.o [1]
+UART_InitCallbacksToDefault
+                         0x801'10f1   0x4a  Code  Gb  stm32wlxx_hal_uart.o [1]
+UART_RxISR_16BIT         0x801'18bd   0x4e  Code  Lc  stm32wlxx_hal_uart.o [1]
+UART_RxISR_16BIT_FIFOEN
+                         0x801'1a5d   0x96  Code  Lc  stm32wlxx_hal_uart.o [1]
+UART_RxISR_8BIT          0x801'186d   0x4e  Code  Lc  stm32wlxx_hal_uart.o [1]
+UART_RxISR_8BIT_FIFOEN   0x801'1981   0x96  Code  Lc  stm32wlxx_hal_uart.o [1]
+UART_SetConfig           0x801'1149  0x24c  Code  Gb  stm32wlxx_hal_uart.o [1]
+UART_Start_Receive_IT    0x801'1571   0xf0  Code  Gb  stm32wlxx_hal_uart.o [1]
+UART_TxISR_16BIT         0x801'174f   0x2e  Code  Lc  stm32wlxx_hal_uart.o [1]
+UART_TxISR_16BIT_FIFOEN
+                         0x801'1803   0x4c  Code  Lc  stm32wlxx_hal_uart.o [1]
+UART_TxISR_8BIT          0x801'1725   0x2a  Code  Lc  stm32wlxx_hal_uart.o [1]
+UART_TxISR_8BIT_FIFOEN   0x801'17a7   0x48  Code  Lc  stm32wlxx_hal_uart.o [1]
+UART_WaitOnFlagUntilTimeout
+                         0x801'14bb   0x7a  Code  Gb  stm32wlxx_hal_uart.o [1]
+USART1_IRQHandler        0x800'e441    0x6  Code  Gb  stm32wlxx_it.o [1]
+USART2_IRQHandler        0x800'e447    0x6  Code  Gb  stm32wlxx_it.o [1]
+UTIL_ADV_TRACE_COND_FSend
+                         0x800'2bff   0xa6  Code  Gb  stm32_adv_trace.o [1]
+UTIL_ADV_TRACE_Init      0x800'2bd1   0x2e  Code  Gb  stm32_adv_trace.o [1]
+UTIL_ADV_TRACE_PostSendHook
+                         0x800'4c93    0x2  Code  Gb  util_if.o [1]
+UTIL_ADV_TRACE_PreSendHook
+                         0x800'4c8f    0x4  Code  Gb  util_if.o [1]
+UTIL_ADV_TRACE_RegisterTimeStampFunction
+                         0x800'2cbd    0x6  Code  Gb  stm32_adv_trace.o [1]
+UTIL_ADV_TRACE_SetVerboseLevel
+                         0x800'2cc3    0x6  Code  Gb  stm32_adv_trace.o [1]
+UTIL_LPM_EnterLowPower   0x800'b1f3   0x36  Code  Gb  stm32_lpm.o [1]
+UTIL_LPM_Init            0x800'b1ad    0xa  Code  Gb  stm32_lpm.o [1]
+UTIL_LPM_SetOffMode      0x800'b1c7    0xe  Code  Gb  stm32_lpm.o [1]
+UTIL_LPM_SetStopMode     0x800'b1b7   0x10  Code  Gb  stm32_lpm.o [1]
+UTIL_MEM_cpy_8           0x800'49c1   0x16  Code  Gb  stm32_mem.o [1]
+UTIL_MEM_set_8           0x800'49d7    0xe  Code  Gb  stm32_mem.o [1]
+UTIL_PowerDriver         0x801'44c4   0x18  Data  Gb  stm32_lpm_if.o [1]
+UTIL_SEQ_Idle            0x800'4c61    0x4  Code  Gb  util_if.o [1]
+UTIL_SEQ_RegTask         0x801'2a0d   0x1a  Code  Gb  stm32_seq.o [1]
+UTIL_SEQ_Run             0x801'2945   0xc8  Code  Gb  stm32_seq.o [1]
+UTIL_SEQ_SetTask         0x801'2a27   0x20  Code  Gb  stm32_seq.o [1]
+UTIL_SYSTIMDriver        0x801'44f0   0x14  Data  Gb  timer_if.o [1]
+UTIL_TIMER_Create        0x800'27a5   0x32  Code  Gb  stm32_timer.o [1]
+UTIL_TIMER_GetCurrentTime
+                         0x800'294d   0x10  Code  Gb  stm32_timer.o [1]
+UTIL_TIMER_GetElapsedTime
+                         0x800'295d   0x1c  Code  Gb  stm32_timer.o [1]
+UTIL_TIMER_IRQ_Handler   0x800'28d1   0x7c  Code  Gb  stm32_timer.o [1]
+UTIL_TIMER_Init          0x800'2799    0xc  Code  Gb  stm32_timer.o [1]
+UTIL_TIMER_SetPeriod     0x800'28a3   0x2e  Code  Gb  stm32_timer.o [1]
+UTIL_TIMER_Start         0x800'27d7   0x70  Code  Gb  stm32_timer.o [1]
+UTIL_TIMER_Stop          0x800'284d   0x56  Code  Gb  stm32_timer.o [1]
+UTIL_TimerDriver         0x801'42a4   0x2c  Data  Gb  timer_if.o [1]
+UTIL_TraceDriver         0x801'4534   0x10  Data  Gb  usart_if.o [1]
+UpdateRxSlotIdleState    0x800'0279   0x14  Code  Lc  LoRaMac.o [1]
+UsageFault_Handler       0x800'e3f5    0x2  Code  Gb  stm32wlxx_it.o [1]
+VerifyRfFreq             0x800'4cb5   0x20  Code  Lc  RegionAS923.o [1]
+VerifyRfFreq             0x800'5789   0x44  Code  Lc  RegionAU915.o [1]
+VerifyRfFreq             0x800'6261   0x44  Code  Lc  RegionCN470.o [1]
+VerifyRfFreq             0x800'6a95   0x20  Code  Lc  RegionCN779.o [1]
+VerifyRfFreq             0x800'751d   0x20  Code  Lc  RegionEU433.o [1]
+VerifyRfFreq             0x800'7f99   0x84  Code  Lc  RegionEU868.o [1]
+VerifyRfFreq             0x800'8aa1   0x20  Code  Lc  RegionIN865.o [1]
+VerifyRfFreq             0x800'a005   0x20  Code  Lc  RegionRU864.o [1]
+VerifyRfFreq             0x800'956f   0x44  Code  Lc  RegionUS915.o [1]
+__NVIC_SetPriority       0x800'e4dd   0x1a  Code  Lc  stm32wlxx_hal_cortex.o [1]
+__NVIC_SystemReset       0x800'e3b9   0x1a  Code  Lc  stm32wlxx_it.o [1]
+__aeabi_d2iz             0x800'bb35         Code  Gb  DblToS32.o [3]
+__aeabi_f2d              0x800'ba95         Code  Gb  FltToDbl.o [3]
+__aeabi_fsub             0x800'ba15         Code  Gb  FltSub.o [3]
+__aeabi_ldiv0            0x800'e725         Code  Gb  I64DivZer.o [4]
+__aeabi_memclr4          0x800'aac5         Code  Gb  ABImemclr4.o [4]
+__aeabi_memcpy           0x800'46dd         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4          0x800'46fd         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8          0x800'46fd         Code  Gb  ABImemcpy.o [4]
+__aeabi_memset           0x800'aa5d         Code  Gb  ABImemset.o [4]
+__aeabi_ui2f             0x800'4785         Code  Gb  U32ToFlt.o [3]
+__cmain                  0x801'43f9         Code  Gb  cmain.o [4]
+__exit                   0x801'442d   0x14  Code  Gb  exit.o [5]
+__iar_Memset             0x800'aa5d         Code  Gb  ABImemset.o [4]
+__iar_Memset4_word       0x800'b9e1         Code  Gb  ABImemset48.o [4]
+__iar_Memset8_word       0x800'b9e1         Code  Gb  ABImemset48.o [4]
+__iar_Memset_word        0x800'aa65         Code  Gb  ABImemset.o [4]
+__iar_data_init3         0x801'42d1   0x28  Code  Gb  data_init.o [4]
+__iar_fadd               0x800'ba21         Code  Gb  FltSub.o [3]
+__iar_floor64            0x800'badd         Code  Gb  floor.o [3]
+__iar_fsub               0x800'bb71         Code  Gb  FltAdd.o [3]
+__iar_fsubStart          0x800'bb81         Code  Gb  FltAdd.o [3]
+__iar_packbits_init_single3
+                         0x801'4145   0x38  Code  Gb  packbits_init_single.o [4]
+__iar_program_start      0x801'4479         Code  Gb  cstartup_M.o [4]
+__iar_small_strlen       0x800'b199         Code  Gb  strlen_small.o [4]
+__iar_small_uldivmod     0x800'da6d         Code  Gb  I64DivMod_small.o [4]
+__iar_zero_init3         0x800'2e8f   0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init         0x801'4417    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  startup_stm32wl55xx_cm4.o [1]
+_call_main               0x801'4405         Code  Gb  cmain.o [4]
+_exit                    0x801'4421         Code  Gb  cexit.o [4]
+_main                    0x801'440f         Code  Gb  cmain.o [4]
+as_uint32                0x801'380f    0x2  Code  Gb  bin.o [1]
+binAppendByte            0x801'375d   0x1e  Code  Gb  bin.o [1]
+binAppendInt16           0x801'377f    0x8  Code  Gb  bin.o [1]
+binAppendInt24           0x801'3787    0x8  Code  Gb  bin.o [1]
+binAppendInt32           0x801'378f    0xa  Code  Gb  bin.o [1]
+binAppendInt64           0x801'37b5   0x42  Code  Gb  bin.o [1]
+binAppendInt8            0x801'377b    0x4  Code  Gb  bin.o [1]
+binAppendReal16          0x801'3801    0xe  Code  Gb  bin.o [1]
+binBegin                 0x801'3709   0x18  Code  Gb  bin.o [1]
+binEnd                   0x801'3721   0x3c  Code  Gb  bin.o [1]
+binFlags                0x2000'2440    0x8  Data  Lc  bin.o [1]
+binFlagsFound           0x2000'2439    0x1  Data  Lc  bin.o [1]
+binMaxFlags             0x2000'2438    0x1  Data  Lc  bin.o [1]
+binRecord               0x2000'2448    0x4  Data  Lc  bin.o [1]
+binRecordAllocLen       0x2000'243a    0x1  Data  Lc  bin.o [1]
+binRecordLen            0x2000'243b    0x1  Data  Lc  bin.o [1]
+binSuccess              0x2000'243c    0x1  Data  Lc  bin.o [1]
+buttonHeldAtBoot        0x2000'24f4    0x1  Data  Gb  appinit.o [1]
+copy_and_key             0x800'ad8b   0x84  Code  Lc  lorawan_aes.o [1]
+copy_block               0x800'acc5   0x42  Code  Lc  lorawan_aes.o [1]
+dbgReceiveBuffer        0x2000'14e4  0x1f4  Data  Gb  debug.o [1]
+dbgReceiveDrainIndex    0x2000'2454    0x4  Data  Gb  debug.o [1]
+dbgReceiveFillIndex     0x2000'2450    0x4  Data  Gb  debug.o [1]
+dbgReceiveOverrun       0x2000'244c    0x1  Data  Gb  debug.o [1]
+dbgReceivedByteISR       0x801'0089   0x4a  Code  Gb  debug.o [1]
+dbgRestartReceive        0x801'0071   0x18  Code  Gb  debug.o [1]
+dbgRxCallback           0x2000'2458    0x4  Data  Lc  debug.o [1]
+exit                     0x801'441b    0x4  Code  Gb  exit.o [2]
+floor                    0x800'badd         Code  Gb  floor.o [3]
+floorl                   0x800'badd         Code  Gb  floor.o [3]
+gfm2_sbox                0x801'3884  0x100  Data  Lc  lorawan_aes.o [1]
+gfm3_sbox                0x801'3984  0x100  Data  Lc  lorawan_aes.o [1]
+hadc                    0x2000'1f8c   0x64  Data  Gb  adc.o [1]
+hdma_i2c2_rx            0x2000'2174   0x60  Data  Gb  main.o [1]
+hdma_i2c2_tx            0x2000'21d4   0x60  Data  Gb  main.o [1]
+hdma_spi1_rx            0x2000'2234   0x60  Data  Gb  main.o [1]
+hdma_spi1_tx            0x2000'2294   0x60  Data  Gb  main.o [1]
+hdma_usart1_rx          0x2000'2054   0x60  Data  Gb  main.o [1]
+hdma_usart1_tx          0x2000'20b4   0x60  Data  Gb  main.o [1]
+hdma_usart2_tx          0x2000'2114   0x60  Data  Gb  main.o [1]
+hi2c2                   0x2000'22f4   0x4c  Data  Gb  main.o [1]
+hlpuart1                0x2000'1c28   0xc8  Data  Gb  main.o [1]
+hrtc                    0x2000'2340   0x38  Data  Gb  rtc.o [1]
+hspi1                   0x2000'1ff0   0x64  Data  Gb  main.o [1]
+hsubghz                 0x2000'242c    0xc  Data  Gb  subghz.o [1]
+huart1                  0x2000'1cf0   0xc8  Data  Gb  main.o [1]
+huart2                  0x2000'1db8   0xc8  Data  Gb  main.o [1]
+ioInit                   0x801'1d0d  0x18e  Code  Gb  appinit.o [1]
+ledIndicateJoinInProgress
+                         0x801'3351    0xa  Code  Gb  led.o [1]
+ledIndicateReceiveInProgress
+                         0x801'3375   0x10  Code  Gb  led.o [1]
+ledIndicateTransmitInProgress
+                         0x801'3389    0x8  Code  Gb  led.o [1]
+ledJoined                0x801'3325   0x22  Code  Gb  led.o [1]
+ledToggleJoin            0x801'335b   0x1a  Code  Gb  led.o [1]
+loraInfo                0x2000'245c   0x10  Data  Lc  lora_info.o [1]
+lorawan_aes_encrypt      0x800'aef5  0x29a  Code  Gb  lorawan_aes.o [1]
+lorawan_aes_set_key      0x800'ae0f   0xe6  Code  Gb  lorawan_aes.o [1]
+main                     0x801'21f7   0x40  Code  Gb  main.o [1]
+memcpy1                  0x800'3735   0x16  Code  Gb  utilities.o [1]
+memcpyr                  0x800'374b   0x1a  Code  Gb  utilities.o [1]
+memset                   0x800'49ad   0x14  Code  Gb  memset.o [4]
+memset1                  0x800'3765    0xe  Code  Gb  utilities.o [1]
+next                    0x2000'028c    0x4  Data  Lc  utilities.o [1]
+peripherals             0x2000'24e4    0x4  Data  Gb  main.o [1]
+randr                    0x800'3703   0x32  Code  Gb  utilities.o [1]
+real32_to_real16         0x801'3811   0x6e  Code  Gb  bin.o [1]
+sbox                     0x801'3a84  0x100  Data  Lc  lorawan_aes.o [1]
+sensorGetData            0x801'3399   0x6c  Code  Gb  sensor.o [1]
+sensorGetData::messagesSent
+                        0x2000'24e8    0x4  Data  Lc  sensor.o [1]
+sensorSecsFailure       0x2000'0004    0x4  Data  Lc  app.o [1]
+sensorSecsSuccess       0x2000'0000    0x4  Data  Lc  app.o [1]
+srand1                   0x800'36fd    0x6  Code  Gb  utilities.o [1]
+startSensorTimer         0x801'262b   0x42  Code  Gb  app.o [1]
+sztmp                   0x2000'12e4  0x200  Data  Lc  stm32_adv_trace.o [1]
+tiny_snprintf_like       0x800'4c9b    0xe  Code  Lc  util_if.o [1]
+tiny_vsnprintf_like      0x800'49e5  0x242  Code  Gb  stm32_tiny_vsnprintf.o [1]
+tristate                 0x801'1c2f   0xde  Code  Gb  appinit.o [1]
+uwTick                  0x2000'0280    0x4  Data  Gb  stm32wlxx_hal.o [1]
+uwTickFreq              0x2000'027c    0x1  Data  Gb  stm32wlxx_hal.o [1]
+uwTickPrio              0x2000'0284    0x4  Data  Gb  stm32wlxx_hal.o [1]
+vcom_DeInit              0x801'422b    0xa  Code  Gb  usart_if.o [1]
+vcom_Init                0x801'4219   0x12  Code  Gb  usart_if.o [1]
+vcom_ReceiveInit         0x801'4241    0xa  Code  Gb  usart_if.o [1]
+vcom_Trace_DMA           0x801'4235    0xc  Code  Gb  usart_if.o [1]
+vector_t                0x2000'1800  0x138  Data  Lc  main.o [1]
+xor_block                0x800'ad07   0x84  Code  Lc  lorawan_aes.o [1]
+
+
+[1] = C:\Users\ray\dev\sparrow-lorawan\Application\EWARM\sparrow\Obj
+[2] = dl7M_tlf.a
+[3] = m7M_tl.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  80'509 bytes of readonly  code memory
+   3'162 bytes of readonly  data memory
+  11'508 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
