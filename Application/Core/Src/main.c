@@ -52,8 +52,38 @@ static void (*TxCpltCallback_LPUART1)(void *) = NULL;
 #define PERIPHERAL_SPI1DMA  0x00000020
 uint32_t peripherals = 0;
 
+#define CHANDLER_TX_EN_Pin GPIO_PIN_2
+#define CHANDLER_TX_EN_GPIO_Port GPIOB
+
 // Forwards
 void SystemClock_Config(void);
+
+//transmission variables
+//uint8_t TxData[16]0403000802459C
+//char TxData[16] = {0x04,0x03,0x00,0x00,0x08,0x00,0x02,0x45,0x9C};
+uint8_t TxData[16] = {0x04030000080002459C};
+uint8_t RxData[16];
+int indx = 0;
+
+
+//data transmission functions
+void sendData (uint8_t *data)
+{
+	// Pull DE high to enable TX operation
+	//PA15 is connected to both Receive enable and transmit enable
+	HAL_GPIO_WritePin(CHANDLER_TX_EN_GPIO_Port, CHANDLER_TX_EN_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_SET);
+	HAL_UART_Transmit(&huart1, data, strlen (data) , 1000);
+	// Pull RE Low to enable RX operation
+	HAL_GPIO_WritePin(CHANDLER_TX_EN_GPIO_Port, CHANDLER_TX_EN_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_RESET);
+
+}
+
+void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
+{
+	HAL_UARTEx_ReceiveToIdle_IT(&huart1, RxData, 16);
+}
 
 // Main entry
 int main(void)
@@ -78,7 +108,24 @@ int main(void)
     MX_UTIL_Init();
 
     // Run the app, which will init its own peripherals
-    MX_AppMain();
+    // not using this
+   // MX_AppMain();
+    MX_USART1_UART_Init();
+
+    //receive to idle interrupt
+    HAL_UARTEx_ReceiveToIdle_IT(&huart1, RxData, 16);
+    while(1){
+    	//if statement using interrupt for running once every 5min
+    	//sprintf(TxData, "0403000802459C", indx++);
+    	sendData(TxData);
+    	HAL_Delay(1000);//repeating every one second CHANGE LATER
+
+    	//returns battery level
+    	//use for health status
+    	//TODO include battery level of sensor as well
+    	//GetBatteryLevel();
+
+    }
 
 }
 
@@ -148,6 +195,16 @@ void MX_GPIO_Init(void)
     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
     HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
 
+
+    /*Configure GPIO pin Output Level */
+    HAL_GPIO_WritePin(CHANDLER_TX_EN_GPIO_Port, CHANDLER_TX_EN_Pin, GPIO_PIN_SET);
+
+    /*Configure GPIO pin : CHANDLER_TX_EN_Pin */
+    GPIO_InitStruct.Pin = CHANDLER_TX_EN_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(CHANDLER_TX_EN_GPIO_Port, &GPIO_InitStruct);
 }
 
 // Enable DMA controller clock
@@ -398,12 +455,13 @@ void MX_USART1_UART_Init(void)
     HAL_NVIC_SetPriority(USART1_TX_DMA_IRQn, 2, 0);
     HAL_NVIC_EnableIRQ(USART1_TX_DMA_IRQn);
 
-    // Initialize
+    // Initialize BAUDRATE
+    //change UART1 baudrate, stop bits, start bits, parity for RS485
     huart1.Instance = USART1;
-    huart1.Init.BaudRate = USART1_BAUDRATE;
-    huart1.Init.WordLength = UART_WORDLENGTH_8B;
-    huart1.Init.StopBits = UART_STOPBITS_1;
-    huart1.Init.Parity = UART_PARITY_NONE;
+    huart1.Init.BaudRate = USART1_BAUDRATE; //115200
+    huart1.Init.WordLength = UART_WORDLENGTH_8B; //8bit long
+    huart1.Init.StopBits = UART_STOPBITS_1; //1 stop bit
+    huart1.Init.Parity = UART_PARITY_NONE; //no parity
     huart1.Init.Mode = UART_MODE_TX_RX;
     huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
     huart1.Init.OverSampling = UART_OVERSAMPLING_16;
