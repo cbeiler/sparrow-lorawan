@@ -61,7 +61,7 @@ void SystemClock_Config(void);
 //transmission variables
 //uint8_t TxData[16]0403000802459C
 //char TxData[16] = {0x04,0x03,0x00,0x00,0x08,0x00,0x02,0x45,0x9C};
-uint8_t TxData[16] = {0x04030000080002459C};
+uint8_t TxData[16] = {0x04,0x03,0x00,0x08,0x00,0x02,0x45};//wrong hex code
 uint8_t RxData[16];
 int indx = 0;
 
@@ -69,11 +69,12 @@ int indx = 0;
 //data transmission functions
 void sendData (uint8_t *data)
 {
+	uint8_t TxData[16] = {0x04,0x03,0x00,0x08,0x00,0x02,0x45,0x9C};
 	// Pull DE high to enable TX operation
 	//PA15 is connected to both Receive enable and transmit enable
 	HAL_GPIO_WritePin(CHANDLER_TX_EN_GPIO_Port, CHANDLER_TX_EN_Pin, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_SET);
-	HAL_UART_Transmit(&huart1, data, strlen (data) , 1000);
+	HAL_UART_Transmit(&huart1, TxData, 8 , 2000);//changed strlen (data) to 9
 	// Pull RE Low to enable RX operation
 	HAL_GPIO_WritePin(CHANDLER_TX_EN_GPIO_Port, CHANDLER_TX_EN_Pin, GPIO_PIN_RESET);
 	HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_RESET);
@@ -88,7 +89,7 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
 // Main entry
 int main(void)
 {
-
+int iter = 0;
     // Copy the vectors
     memcpy(vector_t, (uint8_t *) FLASH_BASE, sizeof(vector_t));
     SCB->VTOR = (uint32_t) vector_t;
@@ -118,8 +119,9 @@ int main(void)
     	//if statement using interrupt for running once every 5min
     	//sprintf(TxData, "0403000802459C", indx++);
     	sendData(TxData);
-    	HAL_Delay(1000);//repeating every one second CHANGE LATER
-
+    	HAL_Delay(2000);//repeating every one second CHANGE LATER
+    	iter++;
+    	sprintf("%d",RxData[0]);
     	//returns battery level
     	//use for health status
     	//TODO include battery level of sensor as well
@@ -458,7 +460,8 @@ void MX_USART1_UART_Init(void)
     // Initialize BAUDRATE
     //change UART1 baudrate, stop bits, start bits, parity for RS485
     huart1.Instance = USART1;
-    huart1.Init.BaudRate = USART1_BAUDRATE; //115200
+    huart1.Init.BaudRate = USART1_BAUDRATE_RS485; //changed to 9600
+    //huart1.Init.BaudRate = 19200;
     huart1.Init.WordLength = UART_WORDLENGTH_8B; //8bit long
     huart1.Init.StopBits = UART_STOPBITS_1; //1 stop bit
     huart1.Init.Parity = UART_PARITY_NONE; //no parity

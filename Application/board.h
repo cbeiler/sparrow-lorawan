@@ -140,6 +140,7 @@
 #define ADC_COUNT                       (ADC_TOTAL-1)       // # of usable ADCs without VREFINT
 
 // USART1
+#define USART1_BAUDRATE_RS485			9600
 #define USART1_BAUDRATE                 115200
 #define USART1_TX_Pin                   GPIO_PIN_6          // PB6
 #define USART1_TX_GPIO_Port             GPIOB
